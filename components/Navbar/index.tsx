@@ -7,8 +7,8 @@ interface NavbarProps {}
 const Navbar: React.FC<NavbarProps> = ({}) => {
     return (
         <nav className="border-gray-200 bg-gray-500 bg-opacity-50">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <div className="flex items-center space-x-4">
+            <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="flex items-center space-x-3 rtl:space-x-reverse">
                     <button
                     aria-expanded="false"
                     aria-label="Index"
@@ -26,9 +26,9 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                             </g>
                         </svg>
                     </button>
-                    <span className="h-full w-px bg-gray-300"></span>
                     <div className="text-white">3/21</div>
-                    <span className="h-full w-px bg-gray-300"></span>
+                </div>
+                <div className="hidden w-full md:block md:w-auto">
                     <span className="text-white">Introducing Our Zoo</span>
                 </div>
 
