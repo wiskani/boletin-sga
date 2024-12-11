@@ -28,6 +28,7 @@ const PageNavigation: React.FC<PageNavigationProps> = ({ prevPageLink, nextPageL
 
             {/* Botón de página siguiente */}
             <a
+                href={nextPageLink }
                 aria-label="Next page"
                 className="flex items-center justify-center mx-0 w-10 h-10 bg-gray-200 hover:bg-gray-300 cursor-pointer"
             >
