@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        acad: ['var(--font-adca)'],
+        tahu: ['var(--font-tahu)'],
+      },
       animation: {
         "slide-left-out": "0.4s ease-in forwards slide-left-out",
         "slide-left-in": "0.4s ease-out slide-left-in",

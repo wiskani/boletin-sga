@@ -12,6 +12,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const adca = localFont({
+    src: "./fonts/Adca.woff",
+    variable: "--font-adca",
+    display: 'swap',
+})
+const tahu = localFont({
+    src: "./fonts/Tahu.woff",
+    variable: "--font-tahu",
+    display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Boletín del SGA",
@@ -26,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${adca.variable} ${tahu.variable}`}
       >
         {children}
       </body>
