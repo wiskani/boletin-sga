@@ -11,6 +11,7 @@ const config: Config = {
             fontFamily: {
                 adca: ['var(--font-adca)'],
                 tahu: ['var(--font-tahu)'],
+                stemligth:['var(--font-stem-ligth)'],
             },
             animation: {
                 "slide-left-out": "0.4s ease-in forwards slide-left-out",
@@ -37,7 +38,8 @@ const config: Config = {
                 },
             },
             colors: {
-                customRed: '#FF5A5F',
+                customRed: '#D0043C',
+                customBlue: '#29338A',
             },
         },
     },

@@ -3,9 +3,13 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
-interface NavbarProps {}
+interface NavbarProps {
+    title?: string | null;
+    pageNumber?: number | null;
+    totalPageNumber?: number;
+}
 
-const Navbar: React.FC<NavbarProps> = ({}) => {
+const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => {
     const [hasAnimated, setHasAnimated] = useState(false);
 
     useEffect (()=> {
@@ -18,8 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 
     return (
         <nav
-            className={`border-gray-200 bg-gray-500 bg-opacity-50 transition-opacity duration-500 ${
-hasAnimated ? "opacity-100" : "opacity-0"
+            className={`border-gray-200 bg-gray-500 bg-opacity-50 transition-opacity duration-500 "
 }`}
         >
             <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-0">
@@ -41,10 +44,13 @@ hasAnimated ? "opacity-100" : "opacity-0"
                             </g>
                         </svg>
                     </button>
-                    <div className="text-white">3/21</div>
+                    <div className="text-white">{pageNumber}/{totalPageNumber}</div>
                 </div>
                 <div className="hidden w-full md:block md:w-auto">
-                    <span className="text-white">Página de Prueba</span>
+                    {title? (
+                    <span className="text-white">{title}</span>
+
+                    ): null}
                 </div>
 
                 {/* Logo */}

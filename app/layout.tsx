@@ -23,6 +23,12 @@ const tahu = localFont({
     display: 'swap',
 })
 
+const stemLight = localFont({
+  src: "./fonts/StemExtraLight.woff",
+  variable: "--font-stem-ligth",
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: "Boletín del SGA",
   description: "Boletín del Sistema de Gestión Ambiental",
@@ -36,7 +42,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${adca.variable} ${tahu.variable}`}
+        className={
+          `${geistSans.variable}
+          ${geistMono.variable}
+          ${adca.variable}
+          ${tahu.variable}
+          ${stemLight.variable}`
+        }
       >
         {children}
       </body>
