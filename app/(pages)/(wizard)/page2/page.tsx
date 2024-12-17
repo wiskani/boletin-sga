@@ -8,6 +8,7 @@ export default function Page() {
 
     useEffect(() => {
         transitions.slideIntoViewport();
+        console.log("render pag2")
     }, []);
 
     return(

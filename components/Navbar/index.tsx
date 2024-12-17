@@ -10,30 +10,22 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => {
-    const [hasAnimated, setHasAnimated] = useState(false);
 
-    useEffect (()=> {
-        const timeout = setTimeout(()=>{
-            setHasAnimated(true);
-        }, 500); // milliseguntes 
-
-        return () => clearTimeout(timeout);
-    },[])
 
     return (
+        <header className="sticky inset-0 z-50 border-b border-slate-100 bg-gray/80 backdrop-blur-lg">
         <nav
-            className={`border-gray-200 bg-gray-500 bg-opacity-50 transition-opacity duration-500 "
-}`}
+            className="bg-opacity-50 transition-all duration-500 "
         >
             <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-0">
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
                     <button
                         aria-expanded="false"
                         aria-label="Index"
-                        className="p-2 bg-transparent text-white"
+                        className="p-2 bg-transparent text-gray"
                     >
                         <svg
-                            fill="rgba(255,255,255,1)"
+                            fill="rgba(155,155,155,1)"
                             height="24"
                             width="24"
                             viewBox="0 0 40 40"
@@ -44,11 +36,11 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
                             </g>
                         </svg>
                     </button>
-                    <div className="text-white">{pageNumber}/{totalPageNumber}</div>
+                    <div className="text-gray">{pageNumber}/{totalPageNumber}</div>
                 </div>
                 <div className="hidden w-full md:block md:w-auto">
                     {title? (
-                    <span className="text-white">{title}</span>
+                    <span className="text-gray">{title}</span>
 
                     ): null}
                 </div>
@@ -70,6 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
 
             </div>
         </nav>
+        </header>
     )
 }
 

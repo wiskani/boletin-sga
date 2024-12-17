@@ -14,7 +14,6 @@ export default function WizardLayout({ children }: React.PropsWithChildren) {
         { path: "/page3", title: "Page 3" },
     ];
     const currentIndex = pages.findIndex((page) => page.path === pathname);
-    console.log(currentIndex)
 
     // Determinar los enlaces de las páginas anterior y siguiente
     const prevPageLink = currentIndex > 0 ? pages[currentIndex - 1].path : null;
