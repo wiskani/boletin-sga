@@ -1,5 +1,3 @@
-"use client"
-
 import { articles } from "@/content/articles";
 import Image from "next/image";
 

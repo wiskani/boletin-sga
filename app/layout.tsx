@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {GeistSans} from "geist/font/sans";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+    src: "./fonts/GeistVF.woff",
+    variable: "--font-geist-sans",
+    weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+    src: "./fonts/GeistMonoVF.woff",
+    variable: "--font-geist-mono",
+    weight: "100 900",
 });
 const adca = localFont({
     src: "./fonts/Adca.woff",
@@ -24,34 +25,35 @@ const tahu = localFont({
 })
 
 const stemLight = localFont({
-  src: "./fonts/StemExtraLight.woff",
-  variable: "--font-stem-ligth",
-  display: 'swap',
+    src: "./fonts/StemExtraLight.woff",
+    variable: "--font-stem-ligth",
+    display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: "Boletín del SGA",
-  description: "Boletín del Sistema de Gestión Ambiental",
+    title: "Boletín del SGA",
+    description: "Boletín del Sistema de Gestión Ambiental",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={
-          `${geistSans.variable}
-          ${geistMono.variable}
-          ${adca.variable}
-          ${tahu.variable}
-          ${stemLight.variable}`
-        }
-      >
-        {children}
-      </body>
-    </html>
-  );
+        children: React.ReactNode;
+    }>) {
+    return (
+        <html lang="en">
+            <body
+                className={
+                    `${geistSans.variable}
+                    ${geistMono.variable}
+                    ${adca.variable}
+                    ${tahu.variable}
+                    ${stemLight.variable}
+                    ${GeistSans.className} antialiased dark:bg-gray-950`
+                }
+            >
+                {children}
+            </body>
+        </html>
+    );
 }

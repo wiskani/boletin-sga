@@ -47,7 +47,17 @@ export default function Home() {
                         </motion.h1>
                     </div>
                     <div
-                        className="text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-left text-white font-tahu">
+                        className="
+                        text-3xl
+                        sm:text-3xl
+                        md:text-3xl
+                        lg:text-4xl
+                        xl:text-5xl
+                        2xl:text-6xl
+                        text-left
+                        text-white
+                        font-tahu"
+                    >
                         <motion.h2
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
