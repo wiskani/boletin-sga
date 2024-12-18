@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import PageNavigation from "@/components/PageNavigation";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function WizardLayout({ children }: React.PropsWithChildren) {
     const pathname = usePathname();
@@ -27,6 +28,7 @@ export default function WizardLayout({ children }: React.PropsWithChildren) {
                     </div>
                 </div>
             <PageNavigation prevPageLink={prevPageLink} nextPageLink={nextPageLink}/>
+            <ScrollIndicator/>
         </>
     )
 }
