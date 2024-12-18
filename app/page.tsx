@@ -15,10 +15,28 @@ export default function Home() {
             bg-center
             bg-[url('/images/background_initial.jpg')]
             ">
-            <div className="w-[90%] mx-auto h-full flex items-center justify-between py-10">
+            <div
+                className="
+                w-[90%]
+                mx-auto
+                h-full
+                flex
+                items-center justify-between py-10"
+            >
                 <div className="lg:w-fit">
                     <div
-                        className="text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-left text-white font-adca uppercase">
+                        className="
+                        text-6xl
+                        sm:text-6xl
+                        md:text-6xl
+                        lg:text-7xl
+                        xl:text-8xl
+                        2xl:text-9xl
+                        text-left
+                        text-white
+                        font-adca
+                        uppercase"
+                    >
                         <motion.h1
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{

@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
                 </div>
                 <div className="hidden w-full md:block md:w-auto">
                     {title? (
-                    <span className="text-gray">{title}</span>
+                    <span className="font-stemlight text-gray uppercase">{title}</span>
 
                     ): null}
                 </div>
@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
                 >
                     <Image
                         alt="logo"
-                        src="/images/logo_white.png"
+                        src="/images/logo_blue.png"
                         className="h-8"
                         width={100}
                         height={56}

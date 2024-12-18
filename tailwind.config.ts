@@ -12,6 +12,8 @@ const config: Config = {
                 adca: ['var(--font-adca)'],
                 tahu: ['var(--font-tahu)'],
                 stemligth:['var(--font-stem-ligth)'],
+                geistsans:['var(--font-geist-sans)'],
+                geistmono:['var(--font-geist-mono)'],
             },
             animation: {
                 "slide-left-out": "0.4s ease-in forwards slide-left-out",
