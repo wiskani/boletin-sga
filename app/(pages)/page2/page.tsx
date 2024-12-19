@@ -1,7 +1,9 @@
 "use client";
 
 import { articles } from "@/content/articles";
+import { data_per_aspect_value } from "@/content/survey";
 import Image from "next/image";
+import { BarList } from "@/components/BarList";
 
 export default function Page() {
     return (
@@ -73,6 +75,7 @@ export default function Page() {
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p
                         className="
+                        text-sm
                         mb-3
                         font-geistsans
                         text-gray-500
@@ -84,27 +87,44 @@ export default function Page() {
                         first-letter:me-3
                         first-letter:float-start
                         text-justify
-                        sm:text-sm"
+                        sm:text-sm
+                        md:text-lg
+                        lg:text-lg
+                        xl:text-xl
+                        2xl:text-xl
+                        "
                     >
                         {articles[0].content[0]}
                     </p>
                     {articles[1].content.slice(1).map((paragraph, index) => (
-                    <p
+                        <p
                             key={index}
-                        className="
-                        mb-3
-                        font-geistsans
-                        text-gray-500
-                        dark:text-gray-400
-                        dark:first-letter:text-gray-100
-                        text-justify
-                        sm:text-sm"
-                    >
-                        {paragraph}
-                    </p>
+                            className="
+                            text-sm
+                            mb-3
+                            font-geistsans
+                            text-gray-500
+                            dark:text-gray-400
+                            dark:first-letter:text-gray-100
+                            text-justify
+                            sm:text-sm
+                            md:text-lg
+                            lg:text-lg
+                            xl:text-xl
+                            2xl:text-xl
+                            "
+                        >
+                            {paragraph}
+                        </p>
 
                     ))}
-                    {/* Más contenido */}
+
+                <BarList
+                    data={data_per_aspect_value}
+                    valueFormatter={(value) => `${value} %`}
+                    className="mt-5"
+                />
+
                 </div>
             </main>
         </div>

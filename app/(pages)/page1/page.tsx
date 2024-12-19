@@ -20,6 +20,7 @@ export default function Page() {
 
             <p
                 className="
+                text-sm
                 mb-3
                 font-geistsans
                 text-gray-500
@@ -31,7 +32,13 @@ export default function Page() {
                 first-letter:me-3
                 first-letter:float-start
                 text-justify
-                sm:text-sm"
+                sm:text-sm
+                md:text-lg
+                lg:text-lg
+                xl:text-xl
+                2xl:text-xl
+                "
+
             >
                 {articles[0].content}
             </p>

@@ -27,6 +27,12 @@ export const chartColors = {
     fill: "fill-amber-500",
     text: "text-amber-500",
   },
+    customYelow: {
+    bg: "bg-customYelow",
+    stroke: "stroke-customYelow",
+    fill: "fill-customYelow",
+    text: "text-customYelow",
+  },
   gray: {
     bg: "bg-gray-500",
     stroke: "stroke-gray-500",
