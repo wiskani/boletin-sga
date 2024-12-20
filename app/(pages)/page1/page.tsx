@@ -18,28 +18,7 @@ export default function Page() {
                 height={533}
             />
 
-            <p
-                className="
-                text-sm
-                mb-3
-                font-geistsans
-                text-gray-500
-                dark:text-gray-400
-                first-letter:text-7xl
-                first-letter:font-bold
-                first-letter:text-gray-900
-                dark:first-letter:text-gray-100
-                first-letter:me-3
-                first-letter:float-start
-                text-justify
-                sm:text-sm
-                md:text-lg
-                lg:text-lg
-                xl:text-xl
-                2xl:text-xl
-                "
-
-            >
+            <p className="firstparagraph">
                 {articles[0].content}
             </p>
 

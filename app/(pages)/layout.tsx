@@ -11,7 +11,7 @@ export default function WizardLayout({ children }: React.PropsWithChildren) {
         { path: "/", title: "Home" },
         { path: "/page1", title: "Introducción" },
         { path: "/page2", title: "Resultados Encuesta Ambiental" },
-        { path: "/page3", title: "Page 3" },
+        { path: "/page3", title: "Cambios en el SGA" },
     ];
     const currentIndex = pages.findIndex((page) => page.path === pathname);
 

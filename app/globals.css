@@ -3,19 +3,113 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.toptitle{
+    @apply
+    text-3xl
+    px-4
+    text-customYelow
+    font-tahu
+    inline-flex
+    items-center
+    justify-center
+    sm:text-3xl
+    md:text-3xl
+    lg:text-3xl
+    xl:text-4xl
+    2xl:text-5xl mb-0;
+}
+
+.title {
+    @apply
+    text-4xl
+    px-4
+    font-adca
+    text-gray-100
+    items-center
+    justify-center
+    leading-tight
+    sm:text-4xl
+    md:text-4xl
+    lg:text-4xl
+    xl:text-5xl
+    2xl:text-6xl
+    uppercase;
+}
+
+.firstparagraph {
+    @apply
+    text-sm
+    mb-3
+    font-geistsans
+    text-gray-500
+    dark:text-gray-400
+    first-letter:text-7xl
+    first-letter:font-bold
+    first-letter:text-gray-900
+    dark:first-letter:text-gray-100
+    first-letter:me-3
+    first-letter:float-start
+    text-justify
+    sm:text-sm
+    md:text-base
+    lg:text-base
+    xl:text-lg
+    2xl:text-lg;
+
+}
+
+.paragraph {
+    @apply
+    text-sm
+    mb-3
+    font-geistsans
+    text-gray-500
+    dark:text-gray-400
+    dark:first-letter:text-gray-100
+    text-justify
+    sm:text-sm
+    md:text-base
+    lg:text-base
+    xl:text-lg
+    2xl:text-lg;
+}
+
+.bullet-text {
+    @apply
+    text-sm
+    mb-2
+    font-geistsans
+    text-gray-500
+    dark:text-gray-400
+    text-justify
+    sm:text-sm
+    md:text-base
+    lg:text-base
+    xl:text-lg
+    2xl:text-lg;
+
+    list-style-type: disc; /* Viñetas tipo disco */
+    padding-left: 1.5rem; /* Sangría para la lista */
+    margin-left: 1rem; /* Espaciado entre el texto principal y la viñeta */
+    line-height: 1.75; /* Espaciado entre líneas */
+    text-indent: -1.5rem; /* Sangría negativa para alinear líneas adicionales */
+    padding-left: 3rem; /* Desplazamiento del contenido después de la viñeta */
+}
+

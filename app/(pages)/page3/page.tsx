@@ -1,9 +1,5 @@
-"use client";
-
-import { articles } from "@/content/articles";
-import { data_per_aspect_value } from "@/content/survey";
-import Image from "next/image";
-import { BarList } from "@/components/BarList";
+import { articles } from "@/content/articles"
+import Image from "next/image"
 
 export default function Page() {
     return (
@@ -24,7 +20,7 @@ export default function Page() {
 
                     {/* Imagen principal */}
                     <Image
-                        src={articles[1].coverImage}
+                        src={articles[2].coverImage}
                         alt="Article image"
                         fill
                         className="absolute left-0 top-0 w-full h-full z-0 object-cover"
@@ -32,33 +28,36 @@ export default function Page() {
 
                     <div className="p-4 absolute bottom-0 left-0 z-20">
                         <h2 className="toptitle">
-                            {articles[1].toptitle}
+                            {articles[2].toptitle}
                         </h2>
                         <h2 className="title">
-                            {articles[1].title}
+                            {articles[2].title}
                         </h2>
                     </div>
                 </div>
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                        {articles[0].content[0]}
+                        {articles[2].content[0]}
                     </p>
-                    {articles[1].content.slice(1).map((paragraph, index) => (
-                        <p
+                    {articles[2].content.slice(1).map((paragraph, index) => {
+                        if (paragraph.trim().startsWith('-')){
+                            return (
+                                <li
+                                    key={index}
+                                    className="bullet-text"
+                                >
+                                    {paragraph.trim().substring(1).trim()}
+                                </li>)
+                        }
+                        return (<p
                             key={index}
                             className="paragraph"
                         >
                             {paragraph}
-                        </p>
+                        </p>)
 
-                    ))}
-
-                    <BarList
-                        data={data_per_aspect_value}
-                        valueFormatter={(value) => `${value} %`}
-                        className="mt-5"
-                    />
+                    })}
 
                 </div>
             </main>
