@@ -42,7 +42,7 @@ export default function Page() {
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                        {articles[0].content[0]}
+                        {articles[1].content[0]}
                     </p>
                     {articles[1].content.slice(1).map((paragraph, index) => (
                         <p
