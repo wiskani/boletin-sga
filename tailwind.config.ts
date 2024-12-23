@@ -94,6 +94,8 @@ const config: Config = {
                 customRed: '#D0043C',
                 customBlue: '#29338A',
                 customYelow: '#E9BB00',
+                customGreen: '#236B4A',
+                custmBlueWater: '#006398',
             },
         },
     },

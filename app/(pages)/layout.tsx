@@ -12,6 +12,7 @@ export default function WizardLayout({ children }: React.PropsWithChildren) {
         { path: "/page1", title: "Introducción" },
         { path: "/page2", title: "Resultados Encuesta Ambiental" },
         { path: "/page3", title: "Cambios en el SGA" },
+        { path: "/page4", title: "Recomendaciones para el ahorro del Agua" },
     ];
     const currentIndex = pages.findIndex((page) => page.path === pathname);
 

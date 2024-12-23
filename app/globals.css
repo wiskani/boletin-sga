@@ -24,7 +24,6 @@ body {
     @apply
     text-3xl
     px-4
-    text-customYelow
     font-tahu
     inline-flex
     items-center
@@ -41,7 +40,6 @@ body {
     text-4xl
     px-4
     font-adca
-    text-gray-100
     items-center
     justify-center
     leading-tight
@@ -82,7 +80,6 @@ body {
     font-geistsans
     text-gray-500
     dark:text-gray-400
-    dark:first-letter:text-gray-100
     text-justify
     sm:text-sm
     md:text-base
@@ -90,6 +87,23 @@ body {
     xl:text-lg
     2xl:text-lg;
 }
+
+.paragraph-extra {
+    @apply
+    text-xs
+    mb-3
+    font-geistsans
+    text-gray-200
+    dark:text-gray-600
+    dark:first-letter:text-gray-100
+    text-justify
+    sm:text-xs
+    md:text-sm
+    lg:text-sm
+    xl:text-base
+    2xl:text-base;
+}
+
 
 .bullet-text {
     @apply
@@ -113,3 +127,24 @@ body {
     padding-left: 3rem; /* Desplazamiento del contenido después de la viñeta */
 }
 
+.bullet-text-extra {
+    @apply
+    text-xs
+    mb-2
+    font-geistsans
+    text-gray-200
+    dark:text-gray-600
+    text-justify
+    sm:text-xs
+    md:text-sm
+    lg:text-sm
+    xl:text-base
+    2xl:text-base;
+
+    list-style-type: disc; /* Viñetas tipo disco */
+    padding-left: 1.5rem; /* Sangría para la lista */
+    margin-left: 1rem; /* Espaciado entre el texto principal y la viñeta */
+    line-height: 1.75; /* Espaciado entre líneas */
+    text-indent: -1.5rem; /* Sangría negativa para alinear líneas adicionales */
+    padding-left: 3rem; /* Desplazamiento del contenido después de la viñeta */
+}

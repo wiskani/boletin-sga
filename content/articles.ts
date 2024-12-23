@@ -57,27 +57,58 @@ export const articles = [
             riesgos climáticos de manera eficiente.`,
         ],
         content_extra_1: {
-            title: "¿Qué es cambio climático",
-            content:[
-                `El cambio climático se refiere a las alteraciones significativas y prolongadas en 
-                los patrones climáticos globales, en gran medida causadas por actividades humanas como 
-                la quema de combustibles fósiles, la deforestación y las prácticas agrícolas intensivas. 
-                Estas actividades aumentan las concentraciones de gases de efecto invernadero en la 
-                atmósfera, lo que lleva al calentamiento global y a una serie de consecuencias adversas.`,
-                `Entre las principales consecuencias del cambio climático se encuentran:`,
-                `-Incremento en la frecuencia e intensidad de eventos climáticos extremos como huracanes, 
-                sequías e inundaciones.`,
-                `-Aumento del nivel del mar, poniendo en riesgo a comunidades costeras.`,
-                `-Pérdida de biodiversidad debido a la alteración de hábitats.`,
-                `-Impactos negativos en la seguridad alimentaria y los recursos hídricos.`,
-                `-Amenazas a la salud humana por olas de calor, propagación de enfermedades y contaminación.`,
-                `Importa abordar el cambio climático porque sus efectos afectan tanto a los ecosistemas como a 
-                la calidad de vida humana. Actuar frente a él no solo mitiga riesgos, sino que también genera 
-                oportunidades para promover tecnologías sostenibles, mejorar la eficiencia en el uso de recursos 
-                y garantizar un futuro saludable para las generaciones venideras.`,
-                            ]
-        },
-        coverImage: '/images/pag_3_01.jpg',
+    title: "¿Qué es el cambio climático?",
+    content: [
+        `El cambio climático se refiere a alteraciones significativas y prolongadas en 
+        los patrones climáticos globales, causadas en gran medida por actividades humanas 
+        como la quema de combustibles fósiles, la deforestación y las prácticas agrícolas intensivas. 
+        Estas actividades aumentan las concentraciones de gases de efecto invernadero en la 
+        atmósfera, lo que provoca el calentamiento global y una serie de consecuencias adversas.`,
+        
+        `Entre las principales consecuencias del cambio climático se encuentran:`,
+
+        `- Incremento en la frecuencia e intensidad de eventos climáticos extremos como huracanes, 
+        sequías e inundaciones.`,
+        
+        `- Aumento del nivel del mar, que pone en riesgo a las comunidades costeras.`,
+        
+        `- Pérdida de biodiversidad debido a la alteración de hábitats.`,
+        
+        `- Impactos negativos en la seguridad alimentaria y los recursos hídricos.`,
+        
+        `- Amenazas a la salud humana, como olas de calor, propagación de enfermedades y aumento 
+        de la contaminación.`,
+        
+        `Abordar el cambio climático es fundamental porque sus efectos afectan tanto a los ecosistemas 
+        como a la calidad de vida humana. Actuar frente a este problema no solo ayuda a mitigar riesgos, 
+        sino que también genera oportunidades para promover tecnologías sostenibles, mejorar la eficiencia 
+        en el uso de recursos y garantizar un futuro saludable para las generaciones venideras.`,
+        
+        `Te invitamos a ver el video de las Naciones Unidas sobre las siete evidencias que demuestran 
+        que el cambio climático sigue avanzando.`
+    ]
+},
+
+       coverImage: '/images/pag_3_01.jpg',
+    },
+    {
+        id: 4,
+        page: 4,
+        title: "agua",
+        toptitle: "Recomendaciones para el ahorro del",
+        content:
+            [`En los meses de noviembre y diciembre se llevó a cabo una encuesta ambiental
+            dirigida a todo el personal de la empresa, con el objetivo de recopilar sus 
+            percepciones sobre los aspectos ambientales identificados en el sistema de 
+            gestión ambiental. Las preguntas se distribuyeron a través de un formulario en 
+            línea, disponible del 16 de noviembre al 18 de diciembre. Participaron 274 
+            personas de un total de 419 consultadas, lo que representa un 65% de participación.`, 
+            `Un aspecto en particular obtuvo una valoración superior al 50%. Este será objeto 
+            de un análisis más detallado para determinar su inclusión como aspecto ambiental 
+            significativo.`,
+            `A continuación, se presentan los resultados obtenidos para cada aspecto ambiental evaluado:`
+        ],
+        coverImage: '/images/pag_4_01.jpg',
     },
 
 ]
