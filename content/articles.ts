@@ -96,17 +96,32 @@ export const articles = [
         page: 4,
         title: "agua",
         toptitle: "Recomendaciones para el ahorro del",
-        content:
-            [`En los meses de noviembre y diciembre se llevó a cabo una encuesta ambiental
-            dirigida a todo el personal de la empresa, con el objetivo de recopilar sus 
-            percepciones sobre los aspectos ambientales identificados en el sistema de 
-            gestión ambiental. Las preguntas se distribuyeron a través de un formulario en 
-            línea, disponible del 16 de noviembre al 18 de diciembre. Participaron 274 
-            personas de un total de 419 consultadas, lo que representa un 65% de participación.`, 
-            `Un aspecto en particular obtuvo una valoración superior al 50%. Este será objeto 
-            de un análisis más detallado para determinar su inclusión como aspecto ambiental 
-            significativo.`,
-            `A continuación, se presentan los resultados obtenidos para cada aspecto ambiental evaluado:`
+        content:[
+            `El agua dulce es un recurso único y escaso en el mundo. Tomemos en cuenta que esta representa 
+            solo el 2.5% del total del agua que existe en el planeta, y de ese porcentaje, menos del 1% 
+            está disponible para consumo humano en ríos, lagos y acuíferos. Debido al cambio climático, 
+            se estima que el acceso al agua dulce será mucho más reducido en las próximas décadas. 
+            Esta realidad es especialmente dura para países como Bolivia, donde la escasez de agua 
+            limpia ya es una preocupación alarmante. Según datos de la Organización Mundial de la Salud 
+            (OMS), solo el 50% de la población en Bolivia tiene acceso a agua potable.`,
+            `La disparidad en el consumo de agua entre regiones es notable: mientras que en países 
+            desarrollados como Estados Unidos y Europa el consumo promedio supera los 300 litros por 
+            día por habitante, en países en vías de desarrollo como los de Sudamérica o África el 
+            consumo promedio se reduce a menos de 50 litros por día por habitante. En Bolivia, la 
+            industria, especialmente los sectores agrícola y minero, domina el uso del agua, 
+            representando el 86% del total del consumo.`,
+            `Las conclusiones de la Conferencia Mundial de los Pueblos sobre el Cambio Climático y 
+            los Derechos de la Madre Tierra, celebrada en Cochabamba, subrayan la urgencia de un cambio 
+            en la actitud de la población hacia este recurso vital. Esto requiere la implementación 
+            de políticas nacionales y programas de educación sanitaria que promuevan un uso eficiente 
+            del agua, con el objetivo de garantizar el bienestar humano, la preservación de la vida y 
+            el respeto por nuestra Madre Tierra.`,
+            `De acuerdo con este contexto y como parte de nuestra responsabilidad corporativa, es 
+            importante que nuestro personal sea consciente e implemente costumbres para el correcto 
+            manejo del agua. Esto implica realizar esfuerzos para evitar malos usos. Entre las 
+            recomendaciones que podemos tomar en cuenta se incluyen:`,
+
+
         ],
         coverImage: '/images/pag_4_01.jpg',
     },
