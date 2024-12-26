@@ -20,7 +20,7 @@ export default function Page() {
 
                     {/* Imagen principal */}
                     <Image
-                        src={articles[2].coverImage}
+                        src={articles[3].coverImage}
                         alt="Article image"
                         fill
                         className="absolute left-0 top-0 w-full h-full z-0 object-cover"
@@ -28,19 +28,19 @@ export default function Page() {
 
                     <div className="p-4 absolute bottom-0 left-0 z-20">
                         <h2 className="toptitle text-customYelow">
-                            {articles[2].toptitle}
+                            {articles[3].toptitle}
                         </h2>
                         <h2 className="title text-gray-100">
-                            {articles[2].title}
+                            {articles[3].title}
                         </h2>
                     </div>
                 </div>
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                        {articles[2].content[0]}
+                        {articles[3].content[0]}
                     </p>
-                    {articles[2].content.slice(1).map((paragraph, index) => {
+                    {articles[3].content.slice(1).map((paragraph, index) => {
                         if (paragraph.trim().startsWith('-')){
                             return (
                                 <li
@@ -64,10 +64,10 @@ export default function Page() {
                     className="mt-9 bg-customGreen dark:bg-emerald-50"
                 >
                     <h2 className="toptitle mt-7 text-white dark:text-customGreen">
-                        {articles[2].content_extra_1?.title}
+                        {articles[3].content_extra_1?.title}
                     </h2>
                     <div className="m-5 pb-5">
-                        {articles[2].content_extra_1?.content.map((paragraph, index) => {
+                        {articles[3].content_extra_1?.content.map((paragraph, index) => {
                             if (paragraph.trim().startsWith('-')){
                                 return (
                                     <li

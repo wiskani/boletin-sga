@@ -24,7 +24,7 @@ export default function Page() {
 
                     {/* Imagen principal */}
                     <Image
-                        src={articles[1].coverImage}
+                        src={articles[2].coverImage}
                         alt="Article image"
                         fill
                         className="absolute left-0 top-0 w-full h-full z-0 object-cover"
@@ -32,19 +32,19 @@ export default function Page() {
 
                     <div className="p-4 absolute bottom-0 left-0 z-20">
                         <h2 className="toptitle text-customYelow">
-                            {articles[1].toptitle}
+                            {articles[2].toptitle}
                         </h2>
                         <h2 className="title text-gray-100">
-                            {articles[1].title}
+                            {articles[2].title}
                         </h2>
                     </div>
                 </div>
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                        {articles[1].content[0]}
+                        {articles[2].content[0]}
                     </p>
-                    {articles[1].content.slice(1).map((paragraph, index) => (
+                    {articles[2].content.slice(1).map((paragraph, index) => (
                         <p
                             key={index}
                             className="paragraph"

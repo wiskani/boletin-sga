@@ -1,19 +1,32 @@
 export const articles = [
     {
+        id:0,
+        page: 0,
+        path: "/",
+        title: "Portada",
+        fulltitle: "Portada",
+        coverImage: '/images/background_initial.jpg',
+    },
+    {
         id: 1,
         page: 1,
+        path: "/page1",
         title: "Introducción",
+        fulltitle: "Introducción",
         content:
             [`El Boletín del Sistema de Gestión Ambiental es publicado de 
             acuerdo al procedimiento 0-P-301 Comunicación Interna, con el 
             fin de informar al personal de ENDE Transmisión sobre los temas 
-            relacionados a la gestión del medio ambiente que se realiza dentro la empresa.`]
+            relacionados a la gestión del medio ambiente que se realiza dentro la empresa.`],
+        coverImage: '/images/pag_1_01.jpg'
     },
     {
         id: 2,
         page: 2,
+        path: "/page2",
         title: "Encuesta Ambiental",
         toptitle: "Resultados de la",
+        fulltitle: "Resultados de la Encuesta Ambiental",
         content:
             [`En los meses de noviembre y diciembre se llevó a cabo una encuesta ambiental
             dirigida a todo el personal de la empresa, con el objetivo de recopilar sus 
@@ -31,8 +44,10 @@ export const articles = [
     {
         id: 3,
         page: 3,
+        path: "/page3",
         title: "en el SGA",
         toptitle: "Cambios",
+        fulltitle: "Cambios en el SGA",
         content:
             [`En el año 2024, el principal cambio identificado en el Sistema de Gestión 
             Ambiental (SGA) de la empresa fue la enmienda realizada a la norma ISO 14001 en 
@@ -94,8 +109,10 @@ export const articles = [
     {
         id: 4,
         page: 4,
+        path: "/page4",
         title: "agua",
         toptitle: "Recomendaciones para el ahorro del",
+        fulltitle: "Recomendaciones para el ahorro del agua",
         content:[
             `El agua dulce es un recurso único y escaso en el mundo. Tomemos en cuenta que esta representa 
             solo el 2.5% del total del agua que existe en el planeta, y de ese porcentaje, menos del 1% 

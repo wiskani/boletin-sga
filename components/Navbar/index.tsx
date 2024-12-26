@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { DropdownMenu } from "../DropdownButton";
 
 interface NavbarProps {
     title?: string | null;
@@ -18,23 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
             >
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-0">
                     <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <button
-                            aria-expanded="false"
-                            aria-label="Index"
-                            className="p-2 bg-transparent text-gray"
-                        >
-                            <svg
-                                fill="rgba(155,155,155,1)"
-                                height="24"
-                                width="24"
-                                viewBox="0 0 40 40"
-                                className="align-middle"
-                            >
-                                <g>
-                                    <path d="m5 10h30v3.4h-30v-3.4z m0 11.6v-3.2h30v3.2h-30z m0 8.4v-3.4h30v3.4h-30z"></path>
-                                </g>
-                            </svg>
-                        </button>
+                        <DropdownMenu/>
                         <div className="text-gray">{pageNumber}/{totalPageNumber}</div>
                     </div>
                     <div className="hidden w-full md:block md:w-auto">

@@ -19,7 +19,7 @@ export default function Page() {
             />
 
             <p className="firstparagraph">
-                {articles[0].content}
+                {articles[1].content}
             </p>
 
         </div>
