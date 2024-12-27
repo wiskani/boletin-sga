@@ -33,14 +33,14 @@ const Navbar: React.FC<NavbarProps> = ({title, pageNumber, totalPageNumber}) => 
                     <Image
                         alt="logo"
                         src="/images/logo_blue.png"
-                        className="h-8 dark:hidden"
+                        className="mr-2 h-8 dark:hidden"
                         width={100}
                         height={56}
                     />
                     <Image
                         alt="logo"
                         src="/images/logo_white.png"
-                        className="h-8 hidden dark:block"
+                        className="mr-2 h-8 hidden dark:block"
                         width={100}
                         height={56}
                     />

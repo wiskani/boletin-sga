@@ -142,5 +142,23 @@ export const articles = [
         ],
         coverImage: '/images/pag_4_01.jpg',
     },
+    {
+        id: 5,
+        page: 5,
+        path: "/page5",
+        title: "en proyectos",
+        toptitle: "Gestión ambiental",
+        fulltitle: "Gestión ambiental en proyectos",
+        content:[
+        `En las siguiente sección se presenta un resumen de los resultados relevantes en cuanto al 
+        control ambiental de los proyectos a los cuales se realizó el cierre ambiental en la gestión 2024.`,
+        `Los indicadores corresponde al nivel de cumplimiento de los requisitos ambientales por los 
+        contratistas, la cantidad de residuos sólidos, las fuentes móviles, las conexiones para el 
+        efluente sanitario y las sensibilizaciones iniciales en medio ambiente impartidas.`,
+
+
+        ],
+        coverImage: '/images/pag_5_01.jpg',
+    },
 
 ]
