@@ -69,7 +69,15 @@ export default function Page() {
 
                             />
                             <p
-                                className="mt-2 b-9 text-center text-xs font-stemligth md:text-base"
+                                className="
+                                mt-2
+                                b-9
+                                text-center
+                                text-xs
+                                font-stemligth
+                                md:text-base
+                                dark:text-black
+                                "
                             >
                                 {recommendation.recommendation}
                             </p>
