@@ -5,6 +5,8 @@ export const projects = [
 
         point: [-18.410526, -66.575876],
 
+        line: [],
+
         contractors: [
             {
                 name: "AA MINELCO - 2M",

@@ -5,9 +5,8 @@ import { articles } from "@/content/articles"
 import dynamic from 'next/dynamic'
 import Image from "next/image"
 import CounterNumber from "@/components/CounterNumber";
+import ProjectContainer from "@/containers/projects";
 
-//import with dynamic
-const Map = dynamic(() => import('@/components/Map'), { ssr: false });
 
 
 export default function Page() {
@@ -50,7 +49,7 @@ export default function Page() {
                         {articles[5].content[0]}
                     </p>
                     {articles[5].content.slice(1).map((paragraph, index) => {
-                        if (paragraph.trim().startsWith('-')){
+                        if (paragraph.trim().startsWith('-')) {
                             return (
                                 <li
                                     key={index}
@@ -70,13 +69,8 @@ export default function Page() {
 
                 </div>
             </main>
-            <CounterNumber initial_value={0}  final_value={100} duration={2}/>
-            <Map
-                centerMap={projects[0].point}
-                zoomMap={16}
-                point={projects[0].point}
-                nameProject={projects[0].title}
-            />
+            <CounterNumber initial_value={0} final_value={100} duration={2} />
+            <ProjectContainer projectNumber={0} />
         </div>
     );
 }

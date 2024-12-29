@@ -35,6 +35,22 @@ body {
     2xl:text-5xl mb-0;
 }
 
+.toptitleextra{
+    @apply
+    text-2xl
+    px-4
+    font-tahu
+    inline-flex
+    items-center
+    justify-center
+    sm:text-2xl
+    md:text-2xl
+    lg:text-2xl
+    xl:text-3xl
+    2xl:text-4xl
+    mb-0;
+}
+
 .title {
     @apply
     text-4xl
@@ -48,6 +64,21 @@ body {
     lg:text-4xl
     xl:text-5xl
     2xl:text-6xl
+    uppercase;
+}
+.titleextra {
+    @apply
+    text-3xl
+    px-4
+    font-adca
+    items-center
+    justify-center
+    leading-tight
+    sm:text-3xl
+    md:text-3xl
+    lg:text-3xl
+    xl:text-3xl
+    2xl:text-4xl
     uppercase;
 }
 
