@@ -2,14 +2,23 @@
  
 import { projects } from "@/content/projects";
 import { articles } from "@/content/articles"
-import dynamic from 'next/dynamic'
 import Image from "next/image"
-import CounterNumber from "@/components/CounterNumber";
 import ProjectContainer from "@/containers/projects";
+import { useState } from "react";
 
 
 
 export default function Page() {
+    const [projectSelected, setProjectSelected] = useState<number | null>(0)
+
+    const handleProjectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const number =   projects.find(project => project.title==event.target.value)
+        if (typeof number=="number") {
+        setProjectSelected(number);
+
+        }
+    };
+
     return (
         <div>
             <main className="mt-10">
@@ -68,7 +77,43 @@ export default function Page() {
                     })}
 
                 </div>
-            <ProjectContainer projectNumber={0} />
+                <form className="max-w-sm mx-auto">
+                    <label
+                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    >
+                        Selecciona un proyecto
+                    </label>
+                    <select
+                        id="projects"
+                        className="
+                        bg-gray-50
+                        border
+                        border-gray-300
+                        text-gray-900
+                        text-xs
+                        rounded-lg
+                        focus:ring-blue-500
+                        focus:border-blue-500
+                        block
+                        w-full
+                        p-2.5
+                        dark:bg-gray-700
+                        dark:border-gray-600
+                        dark:placeholder-gray-400
+                        dark:text-white
+                        dark:focus:ring-blue-500
+                        dark:focus:border-blue-500"
+                        onChange={handleProjectChange}
+                    
+                    >
+                         {projects.map((project, index) => (
+                    <option key={index} value={index}>
+                        {project.title}
+                    </option>
+                ))}
+                    </select>
+                </form>
+                <ProjectContainer projectNumber={0} />
             </main>
         </div>
     );
