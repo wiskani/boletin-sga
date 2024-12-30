@@ -33,39 +33,39 @@ export const projects = [
         environmentalAwareness: [
             {
                 name: "Circulación de caminos existentes",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Introducción de Medio Ambiente",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Manejo de fauna",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Manejo de residuos sólidos",
-                "cantidad": 15
+                "cantidad": 15,
             },
             {
                 name: "Minimización de generación de polvo",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Prevención de derrames",
-                "cantidad": 13
+                "cantidad": 13,
             },
             {
                 name: "Protección de cuerpos de agua",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Protección de flora",
-                "cantidad": 14
+                "cantidad": 14,
             },
             {
                 name: "Uso de protectores auditivos",
-                "cantidad": 14
+                "cantidad": 14,
             },
         ],
 
