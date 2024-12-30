@@ -68,9 +68,8 @@ export default function Page() {
                     })}
 
                 </div>
-            </main>
-            <CounterNumber initial_value={0} final_value={100} duration={2} />
             <ProjectContainer projectNumber={0} />
+            </main>
         </div>
     );
 }

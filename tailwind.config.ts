@@ -6,6 +6,7 @@ const config: Config = {
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./lib/**/*.{js,ts,jsx,tsx,mdx}", //configuration for tremor
+        "./containers/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {

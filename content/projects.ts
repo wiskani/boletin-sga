@@ -7,29 +7,8 @@ export const projects = [
 
         line: [],
 
-        contractors: [
-            {
-                name: "AA MINELCO - 2M",
-                evaluation:
-                {
-                    "Febrero/2023": true,
-                    "Marzo/2023": true,
-                    "Abril/2023": true,
-                    "Mayo/2023": true,
-                    "Junio/2023": true,
-                    "Julio/2023": true,
-                    "Agosto/2023": true,
-                    "Septiembre/2023": true,
-                    "Octubre/2023": true,
-                    "Noviembre/2023": true,
-                    "Diciembre/2023": true,
-                    "Enero/2024": true,
-                    "Febrero/2024": true,
-                    "Marzo/2024": true,
-                },
-                totalEvaluation: 1,
-            },
-        ],
+        contractors: 1,
+        totalEvaluation: 100,
         environmentalAwareness: [
             {
                 name: "Circulación de caminos existentes",
@@ -90,7 +69,7 @@ export const projects = [
             name: "cantidad de conexiones de aguas reciduales",
             amount: 1
         }
-        
+
 
 
     },
