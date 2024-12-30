@@ -3,9 +3,8 @@
 import dynamic from "next/dynamic";
 import { FaPeopleGroup, FaMapLocationDot, FaTrashCan, FaCarSide, FaToilet } from "react-icons/fa6";
 import { BsClipboard2CheckFill } from "react-icons/bs";
-import React, { FC } from "react"
+import React, { FC, useEffect, useState } from "react"
 import { projects } from "@/content/projects";
-import { useMemo } from "react";
 import { BarChart } from "@/components/BarChart";
 import CounterNumber from "@/components/CounterNumber";
 import { DonutChart } from "@/components/DonutChart";
@@ -20,9 +19,11 @@ interface ProjectContainerProps {
 }
 
 const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
-    const centerMap = useMemo(() => {
+    const [centerMap, setCenterMap] = useState([-16.5, -65.2])
+    
+    useEffect(()=>{
         if (projects[projectNumber].point.length > 0) {
-            return projects[projectNumber].point
+            setCenterMap(projects[projectNumber].point)
         }
         else if (projects[projectNumber].line.length > 0) {
             let totalLat = 0;
@@ -36,14 +37,9 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
             const centroidLat = totalLat / projects[projectNumber].line.length;
             const centroidLng = totalLng / projects[projectNumber].line.length;
 
-            return [centroidLat, centroidLng];
+            setCenterMap([centroidLat, centroidLng]);
         }
-        else {
-            return [-16.5, -65.2]
-        }
-    }
-        , []
-    );
+    } , [projectNumber])
 
     return (
         <div

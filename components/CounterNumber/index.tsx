@@ -23,7 +23,7 @@ const CounterNumber: React.FC<CounterNumberProps> =({
         const animation = animate(count, final_value, {duration: duration });
 
         return animation.stop;
-    }, []);
+    }, [final_value, initial_value, duration, count]);
     return (
         <motion.h1 className={className}>
             {rounded}

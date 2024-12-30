@@ -76,7 +76,7 @@ export const projects = [
     {
         id: 1,
         title: "Línea subterránea 115 kV Kenko - Villa Santiago - Alto La Paz",
-        point: [],
+        point: [-16.566013, -68.181803],
         line: [],
         contractors: 2,
         totalEvaluation: 100,

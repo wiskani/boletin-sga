@@ -4,20 +4,20 @@ import { projects } from "@/content/projects";
 import { articles } from "@/content/articles"
 import Image from "next/image"
 import ProjectContainer from "@/containers/projects";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 export default function Page() {
-    const [projectSelected, setProjectSelected] = useState<number | null>(0)
+    const [projectSelected, setProjectSelected] = useState<number>(0)
 
     const handleProjectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const number =   projects.find(project => project.title==event.target.value)
-        if (typeof number=="number") {
-        setProjectSelected(number);
+        const numberSelect = Number(event.target.value)
+        setProjectSelected(numberSelect)
 
-        }
     };
+
+
 
     return (
         <div>
@@ -113,7 +113,7 @@ export default function Page() {
                 ))}
                     </select>
                 </form>
-                <ProjectContainer projectNumber={0} />
+                <ProjectContainer projectNumber={projectSelected} />
             </main>
         </div>
     );

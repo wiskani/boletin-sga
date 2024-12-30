@@ -1,6 +1,8 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import { useEffect } from 'react'
+import { useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import "leaflet-defaulticon-compatibility"
@@ -44,6 +46,17 @@ interface MapProps {
     nameProject: string;
 }
 
+const UpdateMapView: React.FC<{ centerMap: LatLngExpression; zoomMap: number }> = ({ centerMap, zoomMap }) => {
+    const map = useMap();
+
+    useEffect(() => {
+        map.setView(centerMap, zoomMap);
+    }, [centerMap, zoomMap, map]);
+
+    return null;
+};
+
+
 const Map:  React.FC<MapProps>= ({
     point,
     line,
@@ -60,6 +73,7 @@ const Map:  React.FC<MapProps>= ({
             scrollWheelZoom={false}
             className='h-80 w-full 2xl:h-[40rem] xl:h-[40rem] lg:h-[35rem]'
         >
+             <UpdateMapView centerMap={centerMap} zoomMap={zoomMap} />
             <TileLayer
 
                 url={`https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.NEXT_PUBLIC_MAPBOX_TOKEN}`}
