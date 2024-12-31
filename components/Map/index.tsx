@@ -39,8 +39,6 @@ const Tooltip = dynamic(
 interface MapProps {
     point?: LatLngExpression;
     line?: LatLngExpression[];
-    lineOptions?: { color: string };
-    pointsOptions?: { color: string };
     centerMap: LatLngExpression;
     zoomMap: number;
     nameProject: string;
@@ -60,8 +58,6 @@ const UpdateMapView: React.FC<{ centerMap: LatLngExpression; zoomMap: number }> 
 const Map:  React.FC<MapProps>= ({
     point,
     line,
-    lineOptions,
-    pointsOptions,
     centerMap,
     zoomMap,
     nameProject,
@@ -81,7 +77,7 @@ const Map:  React.FC<MapProps>= ({
             />
             {line && (
                 <Polyline
-                    pathOptions={lineOptions} positions={line}
+                    pathOptions={{color: "red"}} positions={line}
                 >
                     <Tooltip>
                         <div>
@@ -94,8 +90,8 @@ const Map:  React.FC<MapProps>= ({
             {point && (
                 <Circle
                     center={point}
-                    pathOptions={pointsOptions}
-                    radius={15}
+                    pathOptions={{color: "red"}}
+                    radius={35}
                 >
                     <Tooltip>
                         <div>

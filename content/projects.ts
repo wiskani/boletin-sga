@@ -59,7 +59,7 @@ export const projects = [
             },
             {
                 name: "Residuos Reciclables",
-                amount: 38 
+                amount: 38
             },
 
         ],
@@ -122,15 +122,15 @@ export const projects = [
         solidWasted: [
             {
                 name: "No aprovechables",
-                amount: 238, 
+                amount: 238,
             },
             {
                 name: "Orgánicos",
-                amount: 310 
+                amount: 310
             },
             {
                 name: "Residuos Reciclables",
-                amount: 138 
+                amount: 138
             },
 
         ],
@@ -142,5 +142,77 @@ export const projects = [
         }
 
 
-    }
+    },
+    {
+        id: 2,
+        title: "Tercera Ampliación Barras 115 kV SE Warnes",
+        point: [-17.534173, -63.145936],
+        line: [],
+        contractors: 1,
+        totalEvaluation: 100,
+        environmentalAwareness: [
+            {
+                name: "Circulación de caminos existentes",
+                "cantidad": 6,
+            },
+            {
+                name: "Introducción de Medio Ambiente",
+                "cantidad": 16,
+            },
+            {
+                name: "Manejo de fauna",
+                "cantidad": 6,
+            },
+            {
+                name: "Manejo de residuos sólidos",
+                "cantidad": 8,
+            },
+            {
+                name: "Minimización de generación de polvo",
+                "cantidad": 4,
+            },
+            {
+                name: "Prevención de derrames",
+                "cantidad": 8,
+            },
+            {
+                name: "Protección de cuerpos de agua",
+                "cantidad": 6,
+            },
+            {
+                name: "Protección de flora",
+                "cantidad": 6,
+            },
+            {
+                name: "Uso de protectores auditivos",
+                "cantidad": 4,
+            },
+        ],
+        solidWasted: [
+            {
+                name: "No aprovechables",
+                amount: 40,
+            },
+            {
+                name: "Orgánicos",
+                amount: 74,
+            },
+            {
+                name: "Residuos Reciclables",
+                amount: 9,
+            },
+            {
+                name: "Sólidos contaminados",
+                amount: 0.6,
+            },
+
+        ],
+        vehicules: 6,
+        wasteWater: {
+            name: "cantidad de conexiones de aguas reciduales",
+            amount: 1
+        }
+
+
+    },
 ]

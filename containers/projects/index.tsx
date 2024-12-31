@@ -65,7 +65,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
                     centerMap={centerMap}
                     line={projects[projectNumber].line}
                     point={projects[projectNumber].point}
-                    zoomMap={16}
+                    zoomMap={13}
                     nameProject={projects[projectNumber].title
                     }
 
