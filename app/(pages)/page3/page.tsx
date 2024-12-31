@@ -38,9 +38,9 @@ export default function Page() {
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                        {articles[3].content[0]}
+                        {articles[3]?.content?.[0] ?? "contenido no disponible"}
                     </p>
-                    {articles[3].content.slice(1).map((paragraph, index) => {
+                    {articles[3]?.content?.slice(1)?.map((paragraph, index) => {
                         if (paragraph.trim().startsWith('-')){
                             return (
                                 <li

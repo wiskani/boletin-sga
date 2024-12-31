@@ -25,20 +25,6 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
         if (projects[projectNumber].point.length > 0) {
             setCenterMap(projects[projectNumber].point)
         }
-        else if (projects[projectNumber].line.length > 0) {
-            let totalLat = 0;
-            let totalLng = 0;
-
-            projects[projectNumber].line.forEach(([lat, lng]) => {
-                totalLat += lat;
-                totalLng += lng;
-            });
-
-            const centroidLat = totalLat / projects[projectNumber].line.length;
-            const centroidLng = totalLng / projects[projectNumber].line.length;
-
-            setCenterMap([centroidLat, centroidLng]);
-        }
     } , [projectNumber])
 
     return (
@@ -62,9 +48,9 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
                 </div>
 
                 <Map
-                    centerMap={centerMap}
+                    centerMap={centerMap as [number, number]}
                     line={projects[projectNumber].line}
-                    point={projects[projectNumber].point}
+                    point={projects[projectNumber].point as [number, number]}
                     zoomMap={13}
                     nameProject={projects[projectNumber].title
                     }
