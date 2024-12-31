@@ -27,14 +27,14 @@ export const articles = [
         title: "Encuesta Ambiental",
         toptitle: "Resultados de la",
         fulltitle: "Resultados de la Encuesta Ambiental",
-        content:
-            [`En los meses de noviembre y diciembre del 2024 se llevó a cabo la encuesta ambiental
-            dirigida a todo el personal de la empresa, con el objetivo de recopilar sus 
-            percepciones sobre los aspectos ambientales identificados en el sistema de 
-            gestión ambiental. Las preguntas se distribuyeron a través de un formulario en 
-            línea, disponible del 16 de noviembre al 18 de diciembre. Participaron 274 
-            personas de un total de 419 consultadas, lo que representa un 65% de participación.`, 
-            `En la encuesta ambiental, se consultó al personal sobre su percepción respecto a los aspectos 
+        content:[
+            `Durante los meses de noviembre y diciembre de 2024, se llevó a cabo una encuesta ambiental 
+            dirigida a todo el personal de la empresa, con el propósito de recopilar sus percepciones sobre
+            los aspectos ambientales identificados en el sistema de gestión ambiental. Las preguntas se 
+            distribuyeron mediante un formulario en línea, disponible del 16 de noviembre al 18 de 
+            diciembre. Un total de 274 personas participaron, de las 419 invitadas, lo que representa una 
+            tasa de participación del 65%, superando el 52% alcanzado el año anterior.`, 
+            `En la encuesta ambiental, se consultó al personal sobre s%u percepción respecto a los aspectos 
             ambientales relacionados con su área de trabajo. Cada aspecto recibió un porcentaje de
             valoración, calculado como la relación entre el número de veces que se consideró grave y el
             total de valoraciones. En esta versión, solo un aspecto en particular obtuvo una valoración
@@ -178,7 +178,7 @@ export const articles = [
 
 
         ],
-        coverImage: '/images/background_initial.jpg',
+        coverImage: '/images/background_back_cover.jpg',
     },
 
 ]
