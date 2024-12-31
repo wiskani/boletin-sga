@@ -28,15 +28,17 @@ export const articles = [
         toptitle: "Resultados de la",
         fulltitle: "Resultados de la Encuesta Ambiental",
         content:
-            [`En los meses de noviembre y diciembre se llevó a cabo una encuesta ambiental
+            [`En los meses de noviembre y diciembre del 2024 se llevó a cabo la encuesta ambiental
             dirigida a todo el personal de la empresa, con el objetivo de recopilar sus 
             percepciones sobre los aspectos ambientales identificados en el sistema de 
             gestión ambiental. Las preguntas se distribuyeron a través de un formulario en 
             línea, disponible del 16 de noviembre al 18 de diciembre. Participaron 274 
             personas de un total de 419 consultadas, lo que representa un 65% de participación.`, 
-            `Un aspecto en particular obtuvo una valoración superior al 50%. Este será objeto 
-            de un análisis más detallado para determinar su inclusión como aspecto ambiental 
-            significativo.`,
+            `En la encuesta ambiental, se consultó al personal sobre su percepción respecto a los aspectos 
+            ambientales relacionados con su área de trabajo. Cada aspecto recibió un porcentaje de
+            valoración, calculado como la relación entre el número de veces que se consideró grave y el
+            total de valoraciones. En esta versión, solo un aspecto en particular obtuvo una valoración
+            superior al 50%.`,
             `A continuación, se presentan los resultados obtenidos para cada aspecto ambiental evaluado:`
         ],
         coverImage: '/images/pag_2_01.jpg',
