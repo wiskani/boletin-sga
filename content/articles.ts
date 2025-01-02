@@ -34,7 +34,7 @@ export const articles = [
             distribuyeron mediante un formulario en línea, disponible del 16 de noviembre al 18 de 
             diciembre. Un total de 274 personas participaron, de las 419 invitadas, lo que representa una 
             tasa de participación del 65%, superando el 52% alcanzado el año anterior.`, 
-            `En la encuesta ambiental, se consultó al personal sobre s%u percepción respecto a los aspectos 
+            `En la encuesta ambiental, se consultó al personal sobre su percepción respecto a los aspectos 
             ambientales relacionados con su área de trabajo. Cada aspecto recibió un porcentaje de
             valoración, calculado como la relación entre el número de veces que se consideró grave y el
             total de valoraciones. En esta versión, solo un aspecto en particular obtuvo una valoración
