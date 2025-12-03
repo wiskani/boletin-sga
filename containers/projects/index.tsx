@@ -20,12 +20,12 @@ interface ProjectContainerProps {
 
 const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
     const [centerMap, setCenterMap] = useState([-16.5, -65.2])
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         if (projects[projectNumber].point.length > 0) {
             setCenterMap(projects[projectNumber].point)
         }
-    } , [projectNumber])
+    }, [projectNumber])
 
     return (
         <div
@@ -43,7 +43,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
                 <div className="flex mt-5 justify-center items-center">
                     <FaMapLocationDot className="text-blue-500 mr-2 text-lg md:text-2xl" />
                     <h3 className="flex items-center text-base text-gray-950 font-stemligth dark:text-gray-50 md:text-xl">
-                        Ubicación del Proyecto 
+                        Ubicación del Proyecto
                     </h3>
                 </div>
 
@@ -65,7 +65,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
                     <div className="flex mt-6 justify-center items-center">
                         <FaPeopleGroup className="text-blue-500 mr-2 text-lg md:text-2xl" />
                         <h3 className="flex items-center text-base text-gray-950 font-stemligth dark:text-gray-50 md:text-xl">
-                            Cantidad de sensibilizaciones al personal 
+                            Cantidad de sensibilizaciones al personal
                         </h3>
                     </div>
                     <BarChart
@@ -87,7 +87,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
             >
                 <BsClipboard2CheckFill className="text-blue-500 mr-2 text-lg md:text-2xl" />
                 <h3 className="text-base text-gray-950 font-stemligth dark:text-gray-50 md:text-xl">
-                    Evaluación de contratistas 
+                    Evaluación de contratistas
                 </h3>
             </div>
 
@@ -150,7 +150,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
             >
                 <FaCarSide className="text-blue-500 mr-2 text-lg md:text-2xl" />
                 <h3 className="text-base text-gray-950 font-stemligth dark:text-gray-50 md:text-xl">
-                    Control de vehículos 
+                    Control de vehículos
                 </h3>
             </div>
 
@@ -173,7 +173,7 @@ const ProjectContainer: FC<ProjectContainerProps> = ({ projectNumber }) => {
             >
                 <FaToilet className="text-blue-500 mr-2 text-lg md:text-2xl" />
                 <h3 className="text-base text-gray-950 font-stemligth dark:text-gray-50 md:text-xl">
-                    Control de aguas residuales 
+                    Control de aguas residuales
                 </h3>
             </div>
 
