@@ -11,8 +11,8 @@ const menuItems = articles.map((article) => ({
     title: article.fulltitle,
     url: article.path,
     imagen: article.coverImage,
-    action: article.id === 0 
-        ? () => console.log("Acción personalizada para Portada") 
+    action: article.id === 0
+        ? () => console.log("Acción personalizada para Portada")
         : undefined, // Agrega acción personalizada para un artículo específico
 }));
 
@@ -86,8 +86,8 @@ export const DropdownMenu = () => {
         const handler = (event: MouseEvent | TouchEvent) => {
             if (
                 open &&
-                    menuRef.current &&
-                    !menuRef.current.contains(event.target as Node)
+                menuRef.current &&
+                !menuRef.current.contains(event.target as Node)
             ) {
                 setOpen(false);
             }
@@ -117,14 +117,14 @@ export const DropdownMenu = () => {
                 ref={buttonRef}
                 aria-expanded="false"
                 aria-label="Index"
-                className="p-2 bg-transparent text-gray"
+                className="p-2 bg-transparent text-white"
                 id="dropdown-button"
                 type="button"
                 onClick={handleToggle}
                 onKeyDown={handleKeyDown}
             >
                 <svg
-                    fill="rgba(155,155,155,1)"
+                    fill="rgba(255,255,255,1)"
                     height="24"
                     width="24"
                     viewBox="0 0 40 40"
@@ -172,8 +172,7 @@ export const DropdownMenu = () => {
                                     font-stemligth
                                     hover:bg-gray-100 
                                     dark:hover:bg-gray-700
-                                    rounded-md ${
-                                    focusedIndex === index ? 'bg-gray-100 dark:bg-gray-700' : ''
+                                    rounded-md ${focusedIndex === index ? 'bg-gray-100 dark:bg-gray-700' : ''
                                     }`}
                                 tabIndex={focusedIndex === index ? 0 : -1}
                                 onKeyDown={(event) => handleItemKeyDown(event, index)}
@@ -202,17 +201,17 @@ export const DropdownMenu = () => {
                                         {item.title}
                                     </Link>
                                 ) : (
-                                        <button
-                                            className="w-full text-left"
-                                            onClick={() => {
-                                                item.action?.();
-                                                setOpen(false);
-                                            }}
-                                            type="button"
-                                        >
-                                            {item.title}
-                                        </button>
-                                    )}
+                                    <button
+                                        className="w-full text-left"
+                                        onClick={() => {
+                                            item.action?.();
+                                            setOpen(false);
+                                        }}
+                                        type="button"
+                                    >
+                                        {item.title}
+                                    </button>
+                                )}
                             </li>
                         ))}
                     </ul>

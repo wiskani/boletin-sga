@@ -13,9 +13,9 @@ const config: Config = {
             fontFamily: {
                 adca: ['var(--font-adca)'],
                 tahu: ['var(--font-tahu)'],
-                stemligth:['var(--font-stem-ligth)'],
-                geistsans:['var(--font-geist-sans)'],
-                geistmono:['var(--font-geist-mono)'],
+                stemligth: ['var(--font-stem-ligth)'],
+                geistsans: ['var(--font-geist-sans)'],
+                geistmono: ['var(--font-geist-mono)'],
             },
             animation: {
                 "slide-left-out": "0.4s ease-in forwards slide-left-out",
@@ -98,6 +98,13 @@ const config: Config = {
                 customGreen: '#236B4A',
                 customBlueWater: '#006398',
                 customYellowPastel: '#ffefbc',
+
+                // 2025 theme
+                custom2025Base: '#1E425E',
+                custom2025Primary: '#256670',
+                custom2025SoftGreen: '#ADE28A',
+                custom2025SoftYellow: '#EDFA8B',
+                custom2025Moss: '#407056',
             },
         },
     },
@@ -108,18 +115,18 @@ const config: Config = {
         slideLeftAndFade: "slideLeftAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         slideUpAndFade: "slideUpAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         slideRightAndFade:
-        "slideRightAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+            "slideRightAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         // Accordion
         accordionOpen: "accordionOpen 150ms cubic-bezier(0.87, 0, 0.13, 1)",
         accordionClose: "accordionClose 150ms cubic-bezier(0.87, 0, 0.13, 1)",
         // Dialog
         dialogOverlayShow:
-        "dialogOverlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+            "dialogOverlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         dialogContentShow:
-        "dialogContentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+            "dialogContentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         // Drawer
         drawerSlideLeftAndFade:
-        "drawerSlideLeftAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+            "drawerSlideLeftAndFade 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         drawerSlideRightAndFade: "drawerSlideRightAndFade 150ms ease-in",
     },
     plugins: [require("@tailwindcss/forms")], //requiere for tremor

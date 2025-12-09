@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { motion } from "motion/react";
+import Image from 'next/image';
 
 export default function Home() {
     const router = useRouter();
@@ -14,6 +15,9 @@ export default function Home() {
             bg-cover
             bg-center
             bg-[url('/images/background_initial.jpg')]
+            md:bg-right
+            max-sm:bg-right
+            sm:bg-right
             ">
             <div
                 className="
@@ -21,15 +25,33 @@ export default function Home() {
                 mx-auto
                 h-full
                 flex
-                items-center justify-between py-10"
+                items-center
+                justify-between
+                py-10
+                "
             >
                 <div className="lg:w-fit">
+                    <motion.div
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                            duration: 2,
+                        }}
+                        initial={{ opacity: 0, scale: 0.7 }}
+                    >
+                        <Image
+                            src="/images/logo_white_full.png"
+                            alt="Logo"
+                            width={200}
+                            height={200}
+                            className="w-30 sm:w-40 md:w-50 mb-10"
+                        />
+                    </motion.div>
                     <div
                         className="
                         text-6xl
-                        sm:text-6xl
-                        md:text-6xl
-                        lg:text-7xl
+                        sm:text-8xl
+                        md:text-8xl
+                        lg:text-8xl
                         xl:text-8xl
                         2xl:text-9xl
                         text-left
@@ -64,8 +86,8 @@ export default function Home() {
                                 duration: 2,
                             }}
                             initial={{ opacity: 0, scale: 0.7 }}
-                            className="text-customRed"
-                            >Del Sistema de Gestión Ambiental</motion.h2>
+                            className="text-customYelow"
+                        >Del Sistema de Gestión Ambiental</motion.h2>
                     </div>
                     <motion.button
                         className="font-stemligth bg-customBlue text-white py-2 px-9 rounded mt-9 uppercase "
@@ -73,11 +95,11 @@ export default function Home() {
                         transition={{
                             duration: 2,
                         }}
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 0, scale: 0.7 }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         onHoverStart={() => console.log('hover started!')}
-                        onClick={()=> router.push('/page1')}
+                        onClick={() => router.push('/page1')}
                     >
 
                         Comenzar

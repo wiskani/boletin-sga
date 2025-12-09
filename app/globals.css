@@ -179,3 +179,29 @@ body {
     text-indent: -1.5rem; /* Sangría negativa para alinear líneas adicionales */
     padding-left: 3rem; /* Desplazamiento del contenido después de la viñeta */
 }
+.newsletter-window {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.newsletter-sheet {
+  width: 140%;
+  height: auto;
+  transform: translateY(100%);
+  animation: newsletter-rise 900ms ease-out 1.2s forwards;
+}
+
+@keyframes newsletter-rise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
