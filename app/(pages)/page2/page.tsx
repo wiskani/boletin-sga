@@ -13,16 +13,14 @@ export default function Page() {
                     className="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative"
                     style={{ height: "24em" }}
                 >
-                    {/* Fondo degradado */}
                     <div
                         className="absolute left-0 bottom-0 w-full h-full z-10"
                         style={{
                             backgroundImage:
-                            "linear-gradient(180deg,transparent,rgba(0,0,0,.7))",
+                                "linear-gradient(180deg,transparent,rgba(0,0,0,.7))",
                         }}
                     ></div>
 
-                    {/* Imagen principal */}
                     <Image
                         src={articles[2].coverImage}
                         alt="Article image"
@@ -42,7 +40,7 @@ export default function Page() {
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
                     <p className="firstparagraph">
-                         {articles[2]?.content?.[0] ?? "Contenido no disponible"}
+                        {articles[2]?.content?.[0] ?? "Contenido no disponible"}
                     </p>
                     {articles[2]?.content?.slice(1)?.map((paragraph, index) => (
                         <p
