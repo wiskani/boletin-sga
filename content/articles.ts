@@ -172,20 +172,7 @@ export const articles = [
         title: "Residuos Sólidos",
         toptitle: "Manejo de",
         fulltitle: "Manejo de Residuos Sólidos",
-        content: [
-            `Durante los meses de noviembre y diciembre de 2024, se llevó a cabo una encuesta ambiental 
-            dirigida a todo el personal de la empresa, con el propósito de recopilar sus percepciones sobre
-            los aspectos ambientales identificados en el sistema de gestión ambiental. Las preguntas se 
-            distribuyeron mediante un formulario en línea, disponible del 16 de noviembre al 18 de 
-            diciembre. Un total de 274 personas participaron, de las 419 invitadas, lo que representa una 
-            tasa de participación del 65%, superando el 52% alcanzado el año anterior.`,
-            `En la encuesta ambiental, se consultó al personal sobre su percepción respecto a los aspectos 
-            ambientales relacionados con su área de trabajo. Cada aspecto recibió un porcentaje de
-            valoración, calculado como la relación entre el número de veces que se consideró grave y el
-            total de valoraciones. En esta versión, solo un aspecto en particular obtuvo una valoración
-            superior al 50%.`,
-            `A continuación, se presentan los resultados obtenidos para cada aspecto ambiental evaluado:`
-        ],
+        content: [],
         coverImage: '/images/pag_6_01.jpg',
     },
     {
