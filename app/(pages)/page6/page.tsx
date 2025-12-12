@@ -67,53 +67,118 @@ export default function Page() {
                     </div>
                 </div>
 
-
-
                 {/* CONTENIDO EN GRID */}
                 <div className="px-4 md:px-8 lg:px-12 mt-12 text-gray-700 text-lg leading-relaxed">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-1 md:gap-x-2 gap-y-1 md:gap-y-2 items-center">
-                        <p className="firstparagraph first-letter:text-customYelow md:col-span-2">
-                            {solidWasted.intro}
-                        </p>
-                        <p className="paragraph">
-                            <strong>{solidWasted.separation.title}</strong><br />
-                            {solidWasted.separation.text.map((p, i) => (
-                                <span key={i}>
-                                    {p}
-                                    {i < solidWasted.separation.text.length - 1 && <br />}
-                                </span>
+                    <div className="flex flex-col gap-y-10">
+
+                        {/* INTRODUCCIÓN (full width) */}
+                        <section className="space-y-6 border-b border-customYelow pb-2">
+                            <p className="firstparagraph first-letter:text-customYelow">
+                                {solidWasted.intro[0]}
+                            </p>
+                            {solidWasted.intro.slice(1).map((text, i) => (
+                                <p key={i} className="paragraph">{text}</p>
                             ))}
-                        </p>
-                        <AutoImageCarouselMotion
-                            images={images}
-                            intervalMs={4000}
-                            height="clamp(180px, 40vw, 320px)"
-                        />
-                        <div className="md:col-span-2">
+                        </section>
+
+                        {/* PRINCIPIOS + CARRUSEL (2 cols, texto más ancho) */}
+                        <section className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-x-6 gap-y-8 items-center">
+                            <div className="space-y-4">
+                                <p className="paragraph">
+                                    <strong>{solidWasted.principles.title}</strong>
+                                </p>
+                                {solidWasted.principles.text.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </div>
+
+                            <AutoImageCarouselMotion
+                                images={images}
+                                intervalMs={4000}
+                                height="clamp(180px, 40vw, 320px)"
+                            />
+                        </section>
+
+                        {/* BANNER (full width) */}
+                        <section>
                             <ParallaxBannerMotion
                                 imageSrc="/images/residuos_municipales_bg.jpg"
-                                text="Residuos sólidos municipales"
-                                textColorClass="text-customYelow"
-                                height={100}
+                                text={solidWasted.municipalWaste.title}
+                                textColorClass="text-white"
+                                height="18vh"
+                                strengthPx={100}
                             />
-                            <p>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                            </p>
-                        </div>
+                        </section>
+
+                        {/* CAMIÓN + TEXTO (2 cols) */}
+                        <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                            <div
+                                className="relative w-full overflow-hidden rounded-xl"
+                                style={{ background: "#E9BB00", height: 220 }}
+                            >
+                                <div className="absolute inset-0 flex items-center">
+                                    <div className="truck-drive">
+                                        <Image
+                                            src="/icons/wasted_trunck.svg"
+                                            alt="Camión de residuos"
+                                            width={350}
+                                            height={150}
+                                            priority
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="space-y-4">
+                                {solidWasted.municipalWaste.intro.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </div>
+                        </section>
+                        {/* contenedores */}
+                        <section className="space-y-6 flex items-center text-center justify-center">
+                            <h3 className="paragraph text-black">
+                                <strong>
+                                    SEPARACIÓN DE RESIDUOS MUNICIPALES
+                                </strong>
+                            </h3>
+                        </section>
+                        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 items-center">
+                            <Image
+                                src="/images/bannerVerticaRSNoApro.svg"
+                                alt="no aprovechables"
+                                width={200}
+                                height={300}
+                                className="w-full h-auto"
+                            />
+                            <Image
+                                src="/images/bannerVerticaRSOrg.svg"
+                                alt="no aprovechables"
+                                width={200}
+                                height={300}
+                                className="w-full h-auto"
+                            />
+                            <Image
+                                src="/images/bannerVerticaRSPla.svg"
+                                alt="no aprovechables"
+                                width={200}
+                                height={300}
+                                className="w-full h-auto"
+                            />
+                            <Image
+                                src="/images/bannerVerticaRSNoApro.jpg"
+                                alt="no aprovechables"
+                                width={200}
+                                height={300}
+                                className="w-full h-auto"
+                            />
+                        </section>
 
                     </div>
                 </div>
+
+
+
             </main>
         </div>
     );

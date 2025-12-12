@@ -85,7 +85,7 @@ body {
 .firstparagraph {
     @apply
     text-sm
-    mb-3
+    mb-2
     font-geistsans
     text-gray-500
     dark:text-gray-400
@@ -106,7 +106,7 @@ body {
 .paragraph {
     @apply
     text-sm
-    mb-3
+    mb-2
     font-geistsans
     text-gray-500
     dark:text-gray-400
@@ -121,7 +121,7 @@ body {
 .paragraph-extra {
     @apply
     text-xs
-    mb-3
+    mb-2
     font-geistsans
     text-gray-200
     dark:text-gray-600
@@ -202,5 +202,24 @@ body {
   to {
     transform: translateY(0%);
   }
+}
+
+
+@keyframes truck-drive-loop {
+  0%   { transform: translateX(-140%); }
+  25%  { transform: translateX(0%); }     /* llega al centro */
+  55%  { transform: translateX(0%); }     /* se queda */
+  85%  { transform: translateX(140%); }   /* sale por la derecha */
+  100% { transform: translateX(140%); }   /* mantiene fuera para que el loop no “salte” */
+}
+
+.truck-drive {
+  animation: truck-drive-loop 4.5s linear infinite;
+  will-change: transform;
+}
+
+/* accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .truck-drive { animation: none; }
 }
 
