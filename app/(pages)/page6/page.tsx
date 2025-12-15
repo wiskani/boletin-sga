@@ -69,6 +69,13 @@ export default function Page() {
 
                 {/* CONTENIDO EN GRID */}
                 <div className="px-4 md:px-8 lg:px-12 mt-12 text-gray-700 text-lg leading-relaxed">
+                     <div className="
+    mx-auto
+    px-4 md:px-8 lg:px-12
+    max-w-screen-xl
+    2xl:max-w-[1200px]
+    3xl:max-w-[1280px]
+  ">
                     <div className="flex flex-col gap-y-10">
 
                         {/* INTRODUCCIÓN (full width) */}
@@ -166,7 +173,7 @@ export default function Page() {
                                 className="w-full h-auto"
                             />
                             <Image
-                                src="/images/bannerVerticaRSNoApro.jpg"
+                                src="/images/bannerVerticaRSPaper.svg"
                                 alt="no aprovechables"
                                 width={200}
                                 height={300}
@@ -174,13 +181,75 @@ export default function Page() {
                             />
                         </section>
 
+                        {/* VEHICULOS + TEXTO (2 cols) */}
+                        <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+
+                            <div className="space-y-4">
+                                {solidWasted.municipalWaste.vehicles.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </div>
+                            <div
+                                className="relative w-full overflow-hidden rounded-xl"
+                                style={{ background: "#E9BB00", height: 220 }}
+                            >
+                                <div className="absolute inset-0 flex items-center">
+                                    <div className="truck-drive">
+                                        <Image
+                                            src="/icons/wasted_trunck.svg"
+                                            alt="Camión de residuos"
+                                            width={350}
+                                            height={150}
+                                            priority
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        {/* BANNER (full width) */}
+                        <section>
+                            <ParallaxBannerMotion
+                                imageSrc="/images/residuos_municipales_bg.jpg"
+                                text={solidWasted.hazardousWaste.title}
+                                textColorClass="text-white"
+                                height="18vh"
+                                strengthPx={100}
+                            />
+                        </section>
+                        {/* SIGNOS PELIGRO + TEXTO (2 cols) */}
+                        <section className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-x-16 gap-y-8 items-center ">
+                            <div
+                                className="relative w-full overflow-hidden rounded-xl"
+                                style={{ background: "#E9BB00", height: 220 }}
+                            >
+                                <div className="absolute inset-0 flex items-center">
+                                    <div className="truck-drive">
+                                        <Image
+                                            src="/icons/wasted_trunck.svg"
+                                            alt="Camión de residuos"
+                                            width={350}
+                                            height={150}
+                                            priority
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="space-y-4">
+                                {solidWasted.hazardousWaste.intro.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </div>
+                        </section>
+
                     </div>
                 </div>
 
+        </div>
 
 
             </main>
-        </div>
+            </div>
     );
 }
 
