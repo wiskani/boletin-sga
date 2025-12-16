@@ -16,7 +16,7 @@ export default function Page() {
 
     return (
         <div>
-            <main>
+            <main className="pb-32">
                 {/* HERO */}
                 <div className="relative w-full" style={{ height: "24em" }}>
                     <div
@@ -370,14 +370,22 @@ export default function Page() {
                                 </div>
                             </section>
 
-                            {/* INTRODUCCIÓN (full width) */}
-                            <section className="space-y-6 border-b border-customYelow pb-2">
-                                <p className="firstparagraph first-letter:text-customYelow">
-                                    {solidWasted.intro[0]}
-                                </p>
-                                {solidWasted.intro.slice(1).map((text, i) => (
+                            {/* CLOSING  */}
+                            <section className="border-t border-customYelow pb-10 items-center justify-center ">
+                                <Image
+                                    src="/images/worker_waste.png"
+                                    alt="Contenedor residuos de sólidos contaminados"
+                                    width={350}
+                                    height={150}
+                                     className="mx-auto"
+                                />
+                                    
+                            </section>
+                            <section >
+                                {solidWasted.closing.map((text, i) => (
                                     <p key={i} className="paragraph">{text}</p>
-                                ))}
+                                    ))}
+                                    
                             </section>
                         </div>
                     </div>
@@ -389,4 +397,5 @@ export default function Page() {
         </div>
     );
 }
+
 
