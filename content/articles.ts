@@ -178,6 +178,16 @@ export const articles = [
     {
         id: 7,
         page: 7,
+        path: "/page7",
+        title: "Flora y Fauna",
+        toptitle: "Recomendaciones para",
+        fulltitle: "Recomendaciones para flora y fauna",
+        content: [],
+        coverImage: '/images/pag_7_01.jpg',
+    },
+    {
+        id: 8,
+        page: 8,
         path: "/backcover",
         title: "Contraportada",
         toptitle: "",

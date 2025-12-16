@@ -1,0 +1,84 @@
+{
+  "intro": [
+    "Como parte de las acciones de sensibilización del Sistema de Gestión Ambiental, este artículo aborda los aspectos relacionados con la protección de la flora y fauna en las actividades de operación y mantenimiento de ENDE Transmisión.",
+    "El objetivo es interiorizar al personal sobre la importancia de la biodiversidad y reforzar prácticas que permitan prevenir impactos negativos sobre los ecosistemas, orientando el trabajo de las distintas áreas de la Empresa."
+  ],
+
+  "biodiversity": {
+    "title": "Biodiversidad y compromiso ambiental",
+    "text": [
+      "La biodiversidad se refiere a la variedad de seres vivos y ecosistemas que existen en un área determinada, e incluye también la variabilidad genética.",
+      "Este conjunto de recursos constituye la riqueza y el patrimonio natural de la humanidad.",
+      "Las actividades de operación y mantenimiento tienen una relación directa con la biodiversidad, por lo que ENDE Transmisión mantiene un firme compromiso con su protección."
+    ]
+  },
+
+  "generalRules": {
+    "title": "Lineamientos generales de protección",
+    "text": [
+      "No se debe perturbar la fauna silvestre durante el desarrollo de las actividades.",
+      "Está totalmente prohibida la caza, pesca y la compra de animales silvestres o de cualquier producto derivado de estos.",
+      "Todos los residuos generados durante los trabajos deben ser retirados de la zona de intervención, evitando dejar desechos en la línea de transmisión.",
+      " Se debe procurar la conservación de la cobertura vegetal herbácea y arbustiva en la faja de seguridad."
+    ]
+  },
+
+  "protectedAreas": {
+    "title": "Áreas Protegidas Nacionales",
+    "text": [
+      "Las Áreas Protegidas Nacionales son espacios naturales destinados a la conservación de recursos como la flora, fauna, suelo, agua y aire, y se encuentran bajo la administración del Servicio Nacional de Áreas Protegidas (SERNAP).",
+      "Los trabajos que ENDE Transmisión realice dentro de un Área Protegida deben contar con la autorización correspondiente del SERNAP.",
+      "El personal ejecutor debe gestionar la Autorización de Ingreso con la debida anticipación.",
+      "Asimismo, el personal que desarrolle actividades de operación y mantenimiento en Áreas Protegidas debe participar en procesos de sensibilización ambiental."
+    ]
+  },
+
+  "wildlife": {
+    "title": "Fauna silvestre",
+    "text": [
+      "Se considera fauna silvestre a los animales que viven libremente en su hábitat natural, así como a los animales domésticos que, por abandono, se han vuelto salvajes."
+    ]
+  },
+
+  "flora": {
+    "title": "Flora silvestre",
+    "text": [
+      "La flora silvestre comprende las especies de plantas que habitan en las diferentes formaciones vegetales del país, tales como bosques densos y abiertos, praderas arbustivas, herbazales y bofedales.",
+      "Las plantaciones de pino, eucalipto y los cultivos agrícolas no forman parte de la flora silvestre."
+    ]
+  },
+
+  "hunting": {
+    "title": "Respecto a la caza y pesca",
+    "text": [
+      "Se considera caza a la búsqueda, acoso, persecución, captura o muerte de animales de la fauna silvestre, así como la recolección de productos derivados de estos.",
+      "El personal de ENDE Transmisión y de las empresas contratistas no debe realizar actividades de caza ni pesca durante la ejecución de trabajos o en sus periodos de descanso.",
+      "La caza ilegal y el maltrato animal están penados por ley, siendo de cumplimiento obligatorio la Ley N.º 12301 de Vida Silvestre y la Ley N.º 700 para la defensa de los animales."
+    ]
+  },
+
+  "habitatProtection": {
+    "title": "Protección de hábitats de flora y fauna",
+    "rules": [
+      "No alimentar animales silvestres.",
+      "Depositar todos los residuos sólidos en bolsas o contenedores autorizados.",
+      "No dejar bolsas, papeles ni restos de alimentos que puedan perturbar a la fauna silvestre.",
+      "No recolectar ningún derivado de animales silvestres, como pieles, miel, huesos, huevos u otros similares.",
+      "No transitar por caminos no autorizados ni ajenos a la actividad regular.",
+      "No cortar vegetación innecesariamente; el desmonte y la poda deben realizarse de forma manual.",
+      "En trabajos dentro de Áreas Protegidas, cumplir estrictamente los permisos y restricciones establecidas.",
+      "Evitar ruidos innecesarios que alteren el hábitat de los animales.",
+      "No comprar ni aceptar ejemplares silvestres ni productos derivados durante actividades laborales.",
+      "Está prohibido encender fogatas o realizar cualquier tipo de combustión de materiales.",
+      "Está prohibido fumar durante actividades de campo.",
+      "Durante la conducción de vehículos, reducir la velocidad si se detecta fauna silvestre en la ruta para evitar atropellamientos."
+    ]
+  },
+
+  "closing": [
+    "La protección de la flora y fauna es una responsabilidad compartida y forma parte esencial del compromiso ambiental de ENDE Transmisión.",
+    "El cumplimiento de estas prácticas contribuye a conservar la biodiversidad y a prevenir impactos negativos sobre los ecosistemas.",
+    "Cuidar la biodiversidad es cuidar el patrimonio natural de Bolivia."
+  ]
+}
+

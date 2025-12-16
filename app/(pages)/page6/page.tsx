@@ -70,16 +70,18 @@ export default function Page() {
                 {/* CONTENIDO EN GRID */}
                 <div className="px-4 md:px-8 lg:px-12 mt-12 text-gray-700 text-lg leading-relaxed">
                     <div className="
-    mx-auto
-    px-4 md:px-8 lg:px-12
-    max-w-screen-xl
-    2xl:max-w-[1200px]
-    3xl:max-w-[1280px]
-  ">
+                    mx-auto
+                    px-4
+                    md:px-8
+                    lg:px-12
+                    max-w-screen-xl
+                    2xl:max-w-[1200px]
+                    3xl:max-w-[1280px]
+                    ">
                         <div className="flex flex-col gap-y-10">
 
                             {/* INTRODUCCIÓN (full width) */}
-                            <section className="space-y-6 border-b border-customYelow pb-2">
+                            <section className="space-y-6 border-b-2 border-customYelow pb-4">
                                 <p className="firstparagraph first-letter:text-customYelow">
                                     {solidWasted.intro[0]}
                                 </p>
@@ -111,7 +113,6 @@ export default function Page() {
                                 <ParallaxBannerMotion
                                     imageSrc="/images/residuos_municipales_bg.jpg"
                                     text={solidWasted.municipalWaste.title}
-                                    textColorClass="text-white"
                                     height="18vh"
                                     strengthPx={100}
                                 />
@@ -371,21 +372,21 @@ export default function Page() {
                             </section>
 
                             {/* CLOSING  */}
-                            <section className="border-t border-customYelow pb-10 items-center justify-center ">
+                            <section className="border-t-2 border-customYelow pb-10 items-center justify-center ">
                                 <Image
                                     src="/images/worker_waste.png"
                                     alt="Contenedor residuos de sólidos contaminados"
                                     width={350}
                                     height={150}
-                                     className="mx-auto"
+                                    className="mx-auto"
                                 />
-                                    
+
                             </section>
                             <section >
                                 {solidWasted.closing.map((text, i) => (
                                     <p key={i} className="paragraph">{text}</p>
-                                    ))}
-                                    
+                                ))}
+
                             </section>
                         </div>
                     </div>
