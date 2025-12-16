@@ -51,15 +51,17 @@
     "title": "Residuos sólidos peligrosos",
     "intro": [
       "Los residuos sólidos peligrosos son aquellos que representan un riesgo para la salud humana o el medio ambiente debido a sus características corrosivas, inflamables, infecciosas o tóxicas.",
-      "Estos residuos deben gestionarse de manera diferenciada y su disposición final debe realizarse mediante empresas especializadas."
+      "Estos residuos deben gestionarse de manera diferenciada y su disposición final debe realizarse mediante empresas especializadas.",
+     "Residuos sólidos que deben considerarse son:"
     ],
+
     "examples": [
       "Pilas y baterías usadas, que deben depositarse en contenedores específicos.",
       "Tubos y focos fluorescentes, que deben almacenarse de forma que se evite su rotura.",
       "Residuos sólidos contaminados como trapos, papeles o envases impregnados con aceites, combustibles o pinturas.",
       "Equipos y materiales en desuso que hayan contenido o contengan sustancias peligrosas.",
       "Medicamentos usados o vencidos.",
-      "Cartuchos de impresoras usados, que deben almacenarse en su empaque original.",
+      "Cartuchos de impresoras usados, que deben almacenarse en su empaque original."
     ],
     "storage": [
       "El almacenamiento de residuos peligrosos debe realizarse bajo condiciones de seguridad.",
