@@ -1,4 +1,3 @@
-
 "use client";
 
 import { articles } from "@/content/articles";
@@ -85,11 +84,11 @@ export default function Page() {
                                 ))}
                             </section>
 
-                            {/* FONDO NENUFAR TITULO + TEXTO */}
+                            {/* TITULO + TEXTO */}
                             <section className="grid grid-cols-1 md:grid-cols-[2fr_4fr] gap-x-16 gap-y-8 items-center ">
                                 <div className="mx-5 items-center justify-center">
-                                    <p className="text-center text-custom2025StrongGreen font-tahu text-5xl sm:xl md:3xl"
-                                    >{floraFauna.biodiversity.title}</p>
+                                    <p className="text-center text-custom2025StrongGreen font-tahu text-2xl sm:text-3xl md:text-5xl">
+                                        {floraFauna.biodiversity.title}</p>
                                 </div>
                                 <div className="lg:px-14 md:px-10 px-5">
                                     <div className="px-5 rounded-lg border-2 border-custom2025StrongGreen py-3">
@@ -101,7 +100,108 @@ export default function Page() {
                                         ))}
                                     </div>
                                 </div>
-
+                            </section>
+                            <section className="mt-8">
+                                <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
+                                    <ParallaxBannerMotion
+                                        imageSrc="/images/nenufares.jpg"
+                                        text={floraFauna.generalRules.title}
+                                        height="25vh"
+                                        strengthPx={100}
+                                        textClassName="text-center text-white font-tahu text-2xl sm:text-3xl md:text-5xl"
+                                    />
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/no_alimentar.png"
+                                        alt="no alimentar ni perturbar"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[0]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/no_cazar.png"
+                                        alt="no cazar"
+                                        width={600}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[1]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/no_dejar_basura.png"
+                                        alt="no dejar basura"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[2]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/mantener_arbustos.png"
+                                        alt="mantener arbustos"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[3]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/no_usar_maquinaria.png"
+                                        alt="no usar maquinaria"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[4]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/no_fogatas.png"
+                                        alt="no hacer fogatas"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[5]}
+                                    </p>
+                                </div>
+                            </section>
+                            <section className="my-5">
+                                <div className="flex flex-col justify-center items-center gap-y-2">
+                                    <Image
+                                        src="/images/reducir_velocidad.png"
+                                        alt="reducir velocidad"
+                                        width={580}
+                                        height={400}
+                                    />
+                                    <p className="paragraph italic text-center">
+                                        {floraFauna.generalRules.text[6]}
+                                    </p>
+                                </div>
                             </section>
                         </div>
                     </div>
