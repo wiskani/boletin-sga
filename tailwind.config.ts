@@ -102,7 +102,7 @@ const config: Config = {
                 // 2025 theme
                 custom2025Base: '#1E425E',
                 custom2025SoftGreen: '#8AE38C',
-                custom2025SoftYellow: '#EDFA8B',
+                custom2025SoftYellow: '#F0F7B5',
                 custom2025StrongGreen: '#5C965D'
             },
         },

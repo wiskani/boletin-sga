@@ -2,7 +2,7 @@ import { articles } from "@/content/articles";
 
 export default function Page() {
     return (
-        <div className="flex flex-col z-10 items-center h-screen bg-custom2025SoftYellow">
+        <div className="flex flex-col z-10 items-center h-screen bg-gray-50">
 
             <div className="
                 relative
@@ -30,10 +30,20 @@ export default function Page() {
                     className="absolute inset-0 w-full h-full pointer-events-none"
                 />
             </div>
+            <div className="
+                    mx-auto
+                    px-4
+                    md:px-8
+                    lg:px-12
+                    max-w-screen-xl
+                    2xl:max-w-[1200px]
+                    3xl:max-w-[1280px]
+                    ">
 
-            <p className="firstparagraph px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40">
-                {articles[1].content}
-            </p>
+                <p className="firstparagraph px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40">
+                    {articles[1].content}
+                </p>
+            </div>
         </div>
     );
 }
