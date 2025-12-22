@@ -4,7 +4,7 @@ import { articles } from "@/content/articles";
 import floraFauna from "@/content/flora_fauna.json"
 import Image from "next/image";
 import EnterIconAnimation from "@/components/EnterIconMotion";
-import AutoImageCarouselMotion from "@/components/AutoImageCarouselMotion";
+import ProtectedAreasMap from "@/components/ProtectedAreas";
 import ParallaxBannerMotion from "@/components/ParallaxBannerMotion";
 
 export default function Page() {
@@ -101,6 +101,8 @@ export default function Page() {
                                     </div>
                                 </div>
                             </section>
+
+                            {/* TITULO + PARALLAX */}
                             <section className="mt-8">
                                 <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
                                     <ParallaxBannerMotion
@@ -112,6 +114,8 @@ export default function Page() {
                                     />
                                 </div>
                             </section>
+
+                            {/* RECOMENDACIONES */}
                             <section className="my-5">
                                 <div className="flex flex-col justify-center items-center gap-y-2">
                                     <Image
@@ -202,6 +206,47 @@ export default function Page() {
                                         {floraFauna.generalRules.text[6]}
                                     </p>
                                 </div>
+                            </section>
+
+                            {/* TITULO + PARALLAX */}
+                            <section className="mt-8">
+                                <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
+                                    <ParallaxBannerMotion
+                                        imageSrc="/images/rupiculas_peruviana.jpg"
+                                        text={floraFauna.protectedAreas.title}
+                                        height="25vh"
+                                        strengthPx={100}
+                                        textClassName="text-center text-white font-tahu text-2xl sm:text-3xl md:text-5xl"
+                                    />
+                                </div>
+                            </section>
+                            <section className="mx-5">
+                                {floraFauna.protectedAreas.text.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </section>
+
+                            {/* MAPA DE AREAS  */}
+                            <section>
+                                <ProtectedAreasMap />
+                            </section>
+
+                            {/* CLOSING  */}
+                            <section className="border-t-2 border-custom2025StrongGreen items-center justify-center ">
+                                <Image
+                                    src="/images/monky.jpg"
+                                    alt="Mono"
+                                    width={200}
+                                    height={150}
+                                    className="mx-auto mt-10"
+                                />
+
+                            </section>
+                            <section >
+                                {floraFauna.closing.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+
                             </section>
                         </div>
                     </div>
