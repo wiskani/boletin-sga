@@ -103,7 +103,8 @@ const config: Config = {
                 custom2025Base: '#1E425E',
                 custom2025SoftGreen: '#8AE38C',
                 custom2025SoftYellow: '#F0F7B5',
-                custom2025StrongGreen: '#5C965D'
+                custom2025StrongGreen: '#5C965D',
+                custom2025DeepOrange: '#FF7D00'
             },
         },
     },

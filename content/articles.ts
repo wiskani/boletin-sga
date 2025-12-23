@@ -188,6 +188,16 @@ export const articles = [
     {
         id: 8,
         page: 8,
+        path: "/page8",
+        title: "Sustancias Pelgirosas",
+        toptitle: "Manejo de",
+        fulltitle: "Manejo de sustancias peligrosas",
+        content: [],
+        coverImage: '/images/pag_8_01.jpg',
+    },
+    {
+        id: 9,
+        page: 9,
         path: "/backcover",
         title: "Contraportada",
         toptitle: "",
