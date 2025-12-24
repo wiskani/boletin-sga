@@ -4,8 +4,7 @@ import { articles } from "@/content/articles";
 import hazardMaterial from "@/content/hazardous_materials.json"
 import Image from "next/image";
 import EnterIconAnimation from "@/components/EnterIconMotion";
-import ProtectedAreasMap from "@/components/ProtectedAreas";
-import ParallaxBannerMotion from "@/components/ParallaxBannerMotion";
+import IconTextRevealMotion from "@/components/IconTextRevealMotion";
 
 export default function Page() {
 
@@ -85,7 +84,7 @@ export default function Page() {
                             </section>
 
                             {/* DEFINICION (full width) */}
-                            <section className="mx-5">
+                            <section className="mx-5 ">
                                 <div>
                                     <p className="paragraph font-bold">{hazardMaterial.definition.title}</p>
                                     {hazardMaterial.definition.text.map((text, i) => (
@@ -94,7 +93,13 @@ export default function Page() {
                                 </div>
                             </section>
 
-
+                            <section>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/toxic_icon.svg"
+                                    text={hazardMaterial.definition.items[3].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                />
+                            </section>
                         </div>
                     </div>
 
