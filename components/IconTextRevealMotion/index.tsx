@@ -1,8 +1,7 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { useState } from "react";
-import Image from "next/image";
 
 type IconTextRevealProps = {
     imageSrc: string;
@@ -10,58 +9,108 @@ type IconTextRevealProps = {
     text: string;
     textClassName?: string;
     bg_color?: string;
+};
 
-}
 const IconTextRevealMotion: React.FC<IconTextRevealProps> = ({
     imageSrc,
     imageAlt = "",
     text,
     textClassName = "paragraph",
-    bg_color = "bg-white"
+    bg_color = "bg-white",
 }) => {
-    const [isReveal, setIsReveal] = useState<boolean>(false)
+    const [isReveal, setIsReveal] = useState<boolean>(false);
+
     return (
-        <div
-            className={`${bg_color} items-start p-3`}
-        >
-            <AnimatePresence
+        <div>
+            <motion.div
                 initial={false}
+                animate={isReveal ? "reveal" : "not_reveal"}
+                className="relative w-full flex items-center justify-center overflow-hidden p-5 select-none rounded-2xl"
             >
-                {isReveal ? (
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0 }}
-                        onClick={() => setIsReveal(false)}
-                        className="h-40 cursor-pointer"
-                    >
-                        <p
-                            className={textClassName}
-                        >
-                            {text}
-                        </p>
-                        <Image
-                            src={imageSrc}
-                            alt={imageAlt}
-                            width={20}
-                            height={20}
-                        />
-                    </motion.div>
-                ) : (
-                    <motion.img
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0 }}
-                        src={imageSrc}
-                        alt={imageAlt}
-                        whileHover={{ scale: 1.1 }}
-                        className="h-40 cursor-pointer"
-                        onClick={() => setIsReveal(true)}
-                    />
-                )}
-            </AnimatePresence>
+                <motion.img
+                    src={imageSrc}
+                    alt={imageAlt}
+                    className="z-10 cursor-pointer mr-6"
+                    onClick={() => setIsReveal(!isReveal)}
+                    variants={iconVariants}
+                    width={130}
+                />
+                <motion.p
+                    className={`z-20 items-center pointer-events-none ${textClassName}`}
+                    variants={textVariants}
+                >
+                    {text}
+                </motion.p>
+                <motion.div
+                    className={` z-0 ${bg_color} absolute top-0 left-0 bottom-0 w-[2500px]`}
+                    variants={bannerVariants}
+                />
+            </motion.div>
         </div>
     );
 };
 
+const iconVariants: Variants = {
+    reveal: {
+        x: 0,
+        transition: {
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.4,
+        },
+    },
+    not_reveal: {
+        x: 100,
+        transition: {
+            delay: 0.2,
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.3,
+        },
+    },
+};
+
+const textVariants: Variants = {
+    reveal: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.3,
+        },
+    },
+    not_reveal: {
+        x: -35,
+        opacity: 0,
+        transition: {
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.3,
+        },
+    },
+};
+
+const bannerVariants: Variants = {
+    reveal: (height = 900) => ({
+        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+        transition: {
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.4,
+        },
+    }),
+    not_reveal: {
+        clipPath: "circle(95px at 186px 105px)",
+        transition: {
+            delay: 0.2,
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.3,
+        },
+    },
+};
+
 export default IconTextRevealMotion;
+
