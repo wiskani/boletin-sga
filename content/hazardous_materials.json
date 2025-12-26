@@ -30,8 +30,7 @@
             },
             {
                 "name": "Radioactividad",
-                "description": "Emisión de radiación ionizante que puede afectar gravemente la salud de las personas y el medio ambiente si no se maneja bajo estrictas medidas de control."
-            },
+                "description":  "Fenómeno físico mediante el cual ciertos materiales inestables emiten radiación ionizante como resultado de procesos de desintegración nuclear, pudiendo generar efectos sobre la salud humana y el medio ambiente."           },
             {
                 "name": "Bioinfecciosidad",
                 "description": "Capacidad de ciertos materiales de contener microorganismos patógenos que pueden provocar infecciones o enfermedades al entrar en contacto con las personas."

@@ -25,7 +25,7 @@ const IconTextRevealMotion: React.FC<IconTextRevealProps> = ({
             <motion.div
                 initial={false}
                 animate={isReveal ? "reveal" : "not_reveal"}
-                className="relative w-full flex items-center justify-center overflow-hidden p-5 select-none rounded-2xl"
+                className="h-40 relative w-full flex items-center justify-center overflow-hidden p-5 select-none rounded-2xl"
             >
                 <motion.img
                     src={imageSrc}
@@ -33,7 +33,7 @@ const IconTextRevealMotion: React.FC<IconTextRevealProps> = ({
                     className="z-10 cursor-pointer mr-6"
                     onClick={() => setIsReveal(!isReveal)}
                     variants={iconVariants}
-                    width={130}
+                    width={90}
                 />
                 <motion.p
                     className={`z-20 items-center pointer-events-none ${textClassName}`}
@@ -102,7 +102,7 @@ const bannerVariants: Variants = {
         },
     }),
     not_reveal: {
-        clipPath: "circle(95px at 186px 105px)",
+        clipPath: "circle(75px at 167px 80px)",
         transition: {
             delay: 0.2,
             type: "tween",

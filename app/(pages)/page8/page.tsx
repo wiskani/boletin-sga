@@ -93,11 +93,81 @@ export default function Page() {
                                 </div>
                             </section>
 
-                            <section>
+                            {/* CORROSIVE (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[0].name}
+                                </p>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/corrosive_icon.svg"
+                                    text={hazardMaterial.definition.items[0].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
+                                />
+                            </section>
+
+                            {/* EXPLOSIVE (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[1].name}
+                                </p>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/explosive_icon.svg"
+                                    text={hazardMaterial.definition.items[1].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
+                                />
+                            </section>
+
+                            {/* FLAMABLE (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[2].name}
+                                </p>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/flamable_icon.svg"
+                                    text={hazardMaterial.definition.items[2].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
+                                />
+                            </section>
+
+                            {/* TOXIC (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[3].name}
+                                </p>
                                 <IconTextRevealMotion
                                     imageSrc="/icons/toxic_icon.svg"
                                     text={hazardMaterial.definition.items[3].description}
                                     bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
+                                />
+                            </section>
+
+                            {/* RADIACTIVE (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[4].name}
+                                </p>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/radiactive_icon.svg"
+                                    text={hazardMaterial.definition.items[4].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
+                                />
+                            </section>
+
+                            {/* BIOINFECCIOSO (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="sm:text-lg md:text-xl text-md uppercase md:text-right text-center text-custom2025DeepOrange font-bold">
+                                    {hazardMaterial.definition.items[5].name}
+                                </p>
+                                <IconTextRevealMotion
+                                    imageSrc="/icons/bioinfeccioso_icon.svg"
+                                    text={hazardMaterial.definition.items[5].description}
+                                    bg_color="bg-custom2025DeepOrange"
+                                    textClassName="text-black md:text-lg text-sm"
                                 />
                             </section>
                         </div>
