@@ -47,14 +47,6 @@
         ]
     },
 
-    "substancesInCompany": {
-        "title": "Sustancias peligrosas presentes en las actividades",
-        "text": [
-            "En las actividades de la Empresa se utilizan y almacenan diversas sustancias peligrosas, entre ellas aceite dieléctrico, electrolito (ácido sulfúrico) en salas de baterías, diésel en grupos electrógenos, gas SF₆ en interruptores de potencia y nitrógeno en tanques de almacenamiento.",
-            "Además, se consideran sustancias peligrosas los residuos asociados, como aceites residuales, baterías usadas, sólidos impregnados con sustancias peligrosas, suelos contaminados, tubos fluorescentes usados, envases de lubricantes y cualquier equipo en desuso que haya estado en contacto con estas sustancias."
-        ]
-    },
-
     "documentation": {
         "title": "Documentación y procedimientos aplicables",
         "text": [
