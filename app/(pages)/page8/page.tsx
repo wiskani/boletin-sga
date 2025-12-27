@@ -5,6 +5,7 @@ import hazardMaterial from "@/content/hazardous_materials.json"
 import Image from "next/image";
 import EnterIconAnimation from "@/components/EnterIconMotion";
 import IconTextRevealMotion from "@/components/IconTextRevealMotion";
+import Link from "next/link";
 
 export default function Page() {
 
@@ -169,6 +170,74 @@ export default function Page() {
                                     bg_color="bg-custom2025DeepOrange"
                                     textClassName="text-black md:text-lg text-sm"
                                 />
+                            </section>
+                            
+                            {/* IMPACTS (2 rows */}
+                            <section className="mx-5 mt-8">
+                                {hazardMaterial.impacts.text.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                            </section>
+                            <section>
+                                <div className="items-center flex justify-center">
+                                <Image
+                                    src="/images/hazard_materials.jpg"
+                                    alt="Impacts of hazardous materials"
+                                    width={700}
+                                    height={500}
+                                    className="h-auto"   
+                                >
+                                </Image>
+
+                                </div>
+                            </section>
+                             {/* DOCUMENTOS DE SUSTANCIAS PELIGROSAS (2 cols) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <div className="space-y-4">
+                                    <p className="paragraph font-bold">
+                                        {hazardMaterial.documentation.title}
+                                    </p>
+                                     {hazardMaterial.documentation.text.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                                <Image
+                                    src="/images/hazarous_document.jpg"
+                                    alt="docuemtos"
+                                    width={500}
+                                    height={100}
+                                />
+                                </div>
+                                <div className="flex ">
+
+        <ul className="list-disc pl-7 md:pl-9 space-y-2 md:space-y-3 paragraph marker:text-[1.1em] md:marker:text-[1.25em] marker:text-gray-500 dark:marker:text-gray-400">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                    2-I-2500 Requisitos para Sustancias químicas peligrosas
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                    1-P-1003 Manejo de Aceites Dieléctricos
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                    2-P-1000 Atención de Emergencias Ambientales
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                    2-I-1001 Atención de Emergencias Ambientales
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                    2-I-1002 Atención de Emergencias Ambientales, relacionadas con Almacenamiento de Sustancias o Residuos Peligrosos
+                </a>
+            </li>
+        </ul>
+</div>
+
                             </section>
                         </div>
                     </div>
