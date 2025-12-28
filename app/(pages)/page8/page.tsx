@@ -6,6 +6,7 @@ import Image from "next/image";
 import EnterIconAnimation from "@/components/EnterIconMotion";
 import IconTextRevealMotion from "@/components/IconTextRevealMotion";
 import Link from "next/link";
+import ParallaxBannerMotion from "@/components/ParallaxBannerMotion";
 
 export default function Page() {
 
@@ -208,37 +209,163 @@ export default function Page() {
                                 />
                                 </div>
                                 <div className="flex ">
+                                    <ul className="list-disc pl-7 md:pl-9 space-y-2 md:space-y-3 paragraph marker:text-[1.1em] md:marker:text-[1.25em] marker:text-gray-500 dark:marker:text-gray-400">
+                                        <li>
+                                            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                                                2-I-2500 Requisitos para Sustancias químicas peligrosas
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                                                1-P-1003 Manejo de Aceites Dieléctricos
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                                                2-P-1000 Atención de Emergencias Ambientales
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                                                2-I-1001 Atención de Emergencias Ambientales
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                                                2-I-1002 Atención de Emergencias Ambientales, relacionadas con Almacenamiento de Sustancias o Residuos Peligrosos
+                                            </Link>
+                                        </li>
+                                    </ul>
+                            </div>
 
-        <ul className="list-disc pl-7 md:pl-9 space-y-2 md:space-y-3 paragraph marker:text-[1.1em] md:marker:text-[1.25em] marker:text-gray-500 dark:marker:text-gray-400">
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
-                    2-I-2500 Requisitos para Sustancias químicas peligrosas
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
-                    1-P-1003 Manejo de Aceites Dieléctricos
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
-                    2-P-1000 Atención de Emergencias Ambientales
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
-                    2-I-1001 Atención de Emergencias Ambientales
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
-                    2-I-1002 Atención de Emergencias Ambientales, relacionadas con Almacenamiento de Sustancias o Residuos Peligrosos
-                </a>
-            </li>
-        </ul>
-</div>
-
+                            {/* LABELING + PARALLAX */}
                             </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <div>
+
+                                    <p className="paragraph font-bold">
+                                        {hazardMaterial.labeling.title}
+                                    </p>
+                                     {hazardMaterial.labeling.text.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+                                </div>
+                                <div className="space-y-8">
+                                <Image
+                                    src="/images/labeling_hazard.jpg"
+                                    alt="etiquetado"
+                                    width={500}
+                                    height={100}
+                                />
+                                <Image
+                                    src="/images/warming_hazard.jpg"
+                                    alt="senalizacion"
+                                    width={500}
+                                    height={100}
+                                />
+                                </div>
+                            </section>
+                            
+                            {/* TITULO + PARALLAX */}
+                            <section className="mt-8">
+                                <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2">
+                                    <ParallaxBannerMotion
+                                        imageSrc="/images/storage_bg.jpg"
+                                        text={hazardMaterial.spillPrevention.title}
+                                        height="20vh"
+                                        strengthPx={100}
+                                        textClassName="text-center text-custom2025DeepOrange font-tahu text-2xl sm:text-3xl md:text-5xl"
+                                    />
+                                </div>
+                            
+                            </section>
+
+                            {/* RECOMENDATIONS (2 colums) */}
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="paragraph">
+                                    {hazardMaterial.spillPrevention.text[0]}
+                                </p>
+                                <Image
+                                    src="/images/storage1.jpg"
+                                    alt="senalizacion"
+                                    width={400}
+                                    height={100}
+                                />
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="paragraph">
+                                    {hazardMaterial.spillPrevention.text[1]}
+                                </p>
+                                <Image
+                                    src="/images/storage2.jpg"
+                                    alt="senalizacion"
+                                    width={400}
+                                    height={100}
+                                />
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="paragraph">
+                                    {hazardMaterial.spillPrevention.text[2]}
+                                </p>
+                                <Image
+                                    src="/images/storage3.jpg"
+                                    alt="senalizacion"
+                                    width={400}
+                                    height={100}
+                                />
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="paragraph">
+                                    {hazardMaterial.spillPrevention.text[3]}
+                                </p>
+                                <Image
+                                    src="/images/storage4.jpg"
+                                    alt="senalizacion"
+                                    width={400}
+                                    height={100}
+                                />
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-16 gap-y-8 items-center ">
+                                <p className="paragraph">
+                                    {hazardMaterial.spillPrevention.text[4]}
+                                </p>
+                                <Image
+                                    src="/images/storage5.jpg"
+                                    alt="senalizacion"
+                                    width={400}
+                                    height={100}
+                                />
+                            </section>
+                            {/* SPLIT REACTION (2 rows */}
+                            <section className="mx-5 mt-8">
+                                <div>
+                                    <p className="font-bold">
+                                        {hazardMaterial.spillResponse.title}
+                                    </p>
+
+<ul className="list-disc pl-6 space-y-2">
+    {hazardMaterial.spillResponse.steps.map((text, i) => (
+        <li key={i} className="paragraph">
+            {text}
+        </li>
+    ))}
+</ul>
+
+                                </div>
+                            </section>
+                            <section>
+                                <div className="items-center flex justify-center">
+                                <Image
+                                    src="/images/split_response.jpg"
+                                    alt="respuesta a derrames"
+                                    width={700}
+                                    height={500}
+                                    className="h-auto"   
+                                >
+                                </Image>
+
+                                </div>
+                                </section>
                         </div>
                     </div>
 
