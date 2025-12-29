@@ -1,98 +1,84 @@
 import { articles } from "@/content/articles"
 import Image from "next/image"
+import EnterIconAnimation from "@/components/EnterIconMotion";
+import refostationContent from "@/content/reforestation.json";
 
 export default function Page() {
     return (
         <div>
-            <main className="mt-10">
-                <div
-                    className="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative"
-                    style={{ height: "24em" }}
-                >
-                    {/* Fondo degradado */}
+            <main className="pb-32">
+                {/* HERO */}
+                <div className="relative w-full" style={{ height: "24em" }}>
                     <div
-                        className="absolute left-0 bottom-0 w-full h-full z-10"
+                        className="absolute inset-0 z-10"
                         style={{
                             backgroundImage:
-                            "linear-gradient(180deg,transparent,rgba(0,0,0,.7))",
+                                "linear-gradient(180deg,transparent,rgba(0,0,0,.6))",
                         }}
                     ></div>
 
-                    {/* Imagen principal */}
                     <Image
                         src={articles[3].coverImage}
                         alt="Article image"
                         fill
-                        className="absolute left-0 top-0 w-full h-full z-0 object-cover"
+                        className="absolute inset-0 z-0 object-cover"
                     />
 
-                    <div className="p-4 absolute bottom-0 left-0 z-20">
-                        <h2 className="toptitle text-customYelow">
-                            {articles[3].toptitle}
-                        </h2>
-                        <h2 className="title text-gray-100">
-                            {articles[3].title}
-                        </h2>
+                    {/* BLOQUE TEXTO + ICONO */}
+                    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 w-full px-4">
+                        <div className="w-full flex justify-center">
+                            {/* CONTENEDOR RESPONSIVO */}
+                            <div className="flex flex-col md:flex-row items-center">
+                                {/* ICONO */}
+                                <div className="order-1 md:order-2 mb-3 md:mb-0 md:ml-4 self-center md:self-start md:mt-2">
+                                    <EnterIconAnimation delay={0.9}>
+                                        <Image
+                                            src="/icons/reforestation_icon.svg"
+                                            alt="Icono de reforestación"
+                                            width={120}
+                                            height={120}
+                                            className="w-14 h-14 md:w-24 md:h-24"
+                                        />
+                                    </EnterIconAnimation>
+                                </div>
+
+                                {/* TEXTOS */}
+                                <div className="order-2 md:order-1 text-center md:text-left">
+                                    <h2 className="toptitle text-custom2025SoftGreen">
+                                        {articles[3].toptitle}
+                                    </h2>
+                                    <h2 className="title text-gray-100">{articles[3].title}</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
-                    <p className="firstparagraph">
-                        {articles[3]?.content?.[0] ?? "contenido no disponible"}
-                    </p>
-                    {articles[3]?.content?.slice(1)?.map((paragraph, index) => {
-                        if (paragraph.trim().startsWith('-')){
-                            return (
-                                <li
-                                    key={index}
-                                    className="bullet-text"
-                                >
-                                    {paragraph.trim().substring(1).trim()}
-                                </li>)
-                        }
-                        return (<p
-                            key={index}
-                            className="paragraph"
-                        >
-                            {paragraph}
-                        </p>)
-
-                    })}
-
-                </div>
-                <div
-                    className="mt-9 bg-customGreen dark:bg-emerald-50"
-                >
-                    <h2 className="toptitle mt-7 text-white dark:text-customGreen">
-                        {articles[3].content_extra_1?.title}
-                    </h2>
-                    <div className="m-5 pb-5">
-                        {articles[3].content_extra_1?.content.map((paragraph, index) => {
-                            if (paragraph.trim().startsWith('-')){
-                                return (
-                                    <li
-                                        key={index}
-                                        className="bullet-text-extra"
-                                    >
-                                        {paragraph.trim().substring(1).trim()}
-                                    </li>)
-                            }
-                            return (<p
-                                key={index}
-                                className="paragraph-extra"
-                            >
-                                {paragraph}
-                            </p>)
-
-                        })}
-                        <iframe
-                            className="w-full aspect-video"
-                            src="https://www.youtube.com/embed/_MOPu_uL-fI?si=3SYfMfUDD2EYokIU"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                        ></iframe>
+                {/* CONTENIDO EN GRID */}
+                <div className="px-4 md:px-8 lg:px-12 mt-12 text-gray-700 text-lg leading-relaxed">
+                    <div
+                        className="
+                    mx-auto
+                    px-4 md:px-8
+                    lg:px-12
+                    max-w-screen-xl
+                    2xl:max-w-[1200px]
+                    3xl:max-w-[1280px]
+                    "
+                    >
+                        <div className="flex flex-col gap-y-7">
+                            {/* INTRODUCCIÓN (full width) */}
+                            <section className="mx-5">
+                                <p className="firstparagraph first-letter:text-custom2025SoftGreen">
+                                    {refostationContent.intro[0]}
+                                </p>
+                                {refostationContent.intro.slice(1).map((text, i) => (
+                                    <p key={i} className="paragraph">
+                                        {text}
+                                    </p>
+                                ))}
+                            </section>
+                        </div>
                     </div>
                 </div>
             </main>
