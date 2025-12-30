@@ -107,6 +107,7 @@ const config: Config = {
                 custom2025DeepOrange: "#FF7D00",
                 custom2025WaterBlue: "#00C0F7",
                 custom2025SlateBlue: "#37435B",
+                custom2025Purple: "#AE4DD4"
             },
         },
     },

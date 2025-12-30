@@ -217,7 +217,7 @@ export default function Page() {
                                     <ul className="list-disc pl-7 md:pl-9 space-y-2 md:space-y-3 paragraph marker:text-[1.1em] md:marker:text-[1.25em] marker:text-gray-500 dark:marker:text-gray-400">
                                         <li>
                                             <Link
-                                                href="#"
+                                                href="https://etrsis.endetransmision.bo/etr/lib/rest/documentos.php?v=1&guid=1e5fe681-4216-492b-9c12-9a54df4a87ef"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:underline underline-offset-4"
@@ -227,7 +227,7 @@ export default function Page() {
                                         </li>
                                         <li>
                                             <Link
-                                                href="#"
+                                                href="https://etrsis.endetransmision.bo/etr/lib/rest/documentos.php?v=1&guid=4bf1cd08-7903-45d4-b373-b09680c2281d"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:underline underline-offset-4"
@@ -237,7 +237,7 @@ export default function Page() {
                                         </li>
                                         <li>
                                             <Link
-                                                href="#"
+                                                href="https://etrsis.endetransmision.bo/etr/lib/rest/documentos.php?v=1&guid=aeba5dc7-099a-49a6-8ea6-515099d5c4ee"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:underline underline-offset-4"
@@ -247,7 +247,7 @@ export default function Page() {
                                         </li>
                                         <li>
                                             <Link
-                                                href="#"
+                                                href="https://etrsis.endetransmision.bo/etr/lib/rest/documentos.php?v=1&guid=962cc7cf-71b5-4e98-beef-bc2bb55fbd30"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:underline underline-offset-4"
@@ -257,7 +257,7 @@ export default function Page() {
                                         </li>
                                         <li>
                                             <Link
-                                                href="#"
+                                                href="https://etrsis.endetransmision.bo/etr/lib/rest/documentos.php?v=1&guid=1c941f57-564f-48f2-bb30-8a5f586fc396"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:underline underline-offset-4"
