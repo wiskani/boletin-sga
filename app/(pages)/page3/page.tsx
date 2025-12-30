@@ -2,6 +2,7 @@ import { articles } from "@/content/articles"
 import Image from "next/image"
 import EnterIconAnimation from "@/components/EnterIconMotion";
 import refostationContent from "@/content/reforestation.json";
+import ImageRevealScrollMotion from "@/components/ImagenRevealScrollMotion";
 
 export default function Page() {
     return (
@@ -66,9 +67,9 @@ export default function Page() {
                     3xl:max-w-[1280px]
                     "
                     >
-                        <div className="flex flex-col gap-y-7">
+                        <div className="flex flex-col gap-y-4">
                             {/* INTRODUCCIÓN (full width) */}
-                            <section className="mx-5">
+                            <section >
                                 <p className="firstparagraph first-letter:text-custom2025SoftGreen">
                                     {refostationContent.intro[0]}
                                 </p>
@@ -77,6 +78,85 @@ export default function Page() {
                                         {text}
                                     </p>
                                 ))}
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-x-6 items-center">
+                                <div>
+                                    {refostationContent.approach.text.map((text, i) => (
+                                        <p key={i} className="paragraph">
+                                            {text}
+                                        </p>
+                                    ))}
+                                </div>
+                                <div className="p-2 md:p-8">
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <ImageRevealScrollMotion
+                                            src="/images/reforestation1.jpg"
+                                            alt="Plantines"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-x-6 gap-y-8 items-center">
+                                <div className="p-2 md:p-8">
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <ImageRevealScrollMotion
+                                            src="/images/reforestation2.jpg"
+                                            alt="Plantines"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="flex flex-col space-y-4 md:space-y-8">
+                                    <p className="paragraph font-bold">
+                                        {refostationContent.activities.title}
+                                    </p>
+                                    <div>
+                                        {refostationContent.activities.text.map((text, i) => (
+                                            <p key={i} className="paragraph">
+                                                {text}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </div>
+                            </section>
+                            <section className="grid grid-cols-1 md:grid-cols-[2fr_2fr] gap-x-6 gap-y-8 items-center">
+                                <div className="flex flex-col space-y-4 md:space-y-8">
+                                    <p className="paragraph font-bold">
+                                        {refostationContent.location.title}
+                                    </p>
+                                    <div>
+                                        {refostationContent.location.text.map((text, i) => (
+                                            <p key={i} className="paragraph">
+                                                {text}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="p-2 md:p-8">
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <ImageRevealScrollMotion
+                                            src="/images/map_reforestation.jpg"
+                                            alt="Mapa Reforestación"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+
+                            {/* CLOSING  */}
+                            <section className="border-t-2 border-custom2025SoftGreen items-center justify-center ">
+                                <div className="p-2 md:p-8">
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <ImageRevealScrollMotion
+                                            src="/images/reforestation3.jpg"
+                                            alt="Reforestación"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                            <section >
+                                {refostationContent.closing.map((text, i) => (
+                                    <p key={i} className="paragraph">{text}</p>
+                                ))}
+
                             </section>
                         </div>
                     </div>
