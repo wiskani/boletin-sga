@@ -59,7 +59,7 @@ export default function Page() {
                 </div>
 
                 <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
-                    <p className="firstparagraph">
+                    <p className="firstparagraph first-letter:text-custom2025Purple">
                         {articles[2]?.content?.[0] ?? "Contenido no disponible"}
                     </p>
                     {articles[2]?.content?.slice(1)?.map((paragraph, index) => (
