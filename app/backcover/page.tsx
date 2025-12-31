@@ -81,9 +81,9 @@ export default function Page() {
                     }}
                     initial={{ opacity: 0, scale: 0.7 }}
                 >
-                    Calle Walter Galindo No S-3643, entre calles Hernan Muller y Aranibar Orozco <br />
-                    (Av. Victor Ustáriz km 4 1⁄2). Casilla No 640<br />
-                    Teléfonos: (591-4) 425900 - 4259512<br />
+                    Calle Walter Galindo No S-3643, entre calles Herman Muller y Aranibar Orozco <br />
+                    (Av. Victor Ustáriz km 4 1⁄2).<br />
+                    Teléfonos: (591-4) 4259500 - 4259512<br />
                     Fax: (591-4) 4259516<br />
                     E-mail: endetransmision@endetransmision.bo<br />
                     Cochabamba - Bolivia<br />
