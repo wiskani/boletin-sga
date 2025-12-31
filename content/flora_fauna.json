@@ -1,0 +1,46 @@
+{
+  "intro": [
+    "Como parte de las acciones de sensibilización del Sistema de Gestión Ambiental, este artículo aborda los aspectos relacionados con la protección de la flora y fauna en las actividades de operación y mantenimiento de ENDE Transmisión.",
+    "El objetivo es interiorizar al personal sobre la importancia de la biodiversidad y reforzar prácticas que permitan prevenir impactos negativos sobre los ecosistemas, orientando el trabajo de las distintas áreas de la Empresa."
+  ],
+
+  "biodiversity": {
+    "title": "Biodiversidad y compromiso ambiental",
+    "text": [
+      "La biodiversidad se refiere a la variedad de seres vivos y ecosistemas que existen en un área determinada, e incluye también la variabilidad genética.",
+      "Este conjunto de recursos constituye la riqueza y el patrimonio natural de la humanidad.",
+      "Las actividades de operación y mantenimiento tienen una relación directa con la biodiversidad, por lo que ENDE Transmisión mantiene un firme compromiso con su protección."
+    ]
+  },
+
+  "generalRules": {
+    "title": "Lineamientos generales de protección",
+    "text": [
+      "No se debe perturbar o alimentar a la fauna silvestre durante el desarrollo de las actividades.",
+      "Está totalmente prohibida la caza, pesca, compra, aceptación o tenencia de animales silvestres, así como de cualquier producto derivado de estos, durante el desarrollo de las actividades laborales.",
+      "Todos los residuos generados durante los trabajos deben ser retirados de la zona de intervención, evitando dejar desechos en la línea de transmisión.",
+      " Se debe procurar la conservación de la cobertura vegetal herbácea y arbustiva en la faja de seguridad.",
+      "No cortar vegetación innecesariamente; el desmonte y la poda deben realizarse de forma manual.",
+      "Está prohibido encender fogatas o realizar cualquier tipo de combustión de materiales.",
+      "Durante la conducción de vehículos, reducir la velocidad si se detecta fauna silvestre en la ruta para evitar atropellamientos."
+
+    ]
+  },
+
+  "protectedAreas": {
+    "title": "Áreas Protegidas Nacionales",
+    "text": [
+      "Las Áreas Protegidas Nacionales son espacios naturales destinados a la conservación de recursos como la flora, fauna, suelo, agua y aire, y se encuentran bajo la administración del Servicio Nacional de Áreas Protegidas (SERNAP).",
+      "Los trabajos que ENDE Transmisión realice dentro de un Área Protegida deben contar con la autorización correspondiente del SERNAP.",
+      "El personal ejecutor debe gestionar la Autorización de Ingreso con la debida anticipación.",
+      "Asimismo, el personal que desarrolle actividades de operación y mantenimiento en Áreas Protegidas debe participar en procesos de sensibilización ambiental."
+    ]
+  },
+
+  "closing": [
+    "La protección de la flora y fauna es una responsabilidad compartida y forma parte esencial del compromiso ambiental de ENDE Transmisión.",
+    "El cumplimiento de estas prácticas contribuye a conservar la biodiversidad y a prevenir impactos negativos sobre los ecosistemas.",
+    "Cuidar la biodiversidad es cuidar el patrimonio natural de Bolivia."
+  ]
+}
+

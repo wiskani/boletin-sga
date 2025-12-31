@@ -1,0 +1,30 @@
+{
+  "intro": [
+    "El agua dulce es un recurso único y escaso en el mundo. Aunque cubre gran parte del planeta, representa solo el 2,5 % del total del agua existente, y de este porcentaje, menos del 1 % se encuentra disponible para el consumo humano en ríos, lagos y acuíferos.",
+    "Debido al cambio climático, se estima que el acceso al agua dulce será cada vez más limitado en las próximas décadas. Esta situación resulta especialmente crítica para países como Bolivia, donde la escasez de agua limpia ya constituye una preocupación creciente.",
+    "Según datos de la Organización Mundial de la Salud (OMS), únicamente alrededor del 50 % de la población boliviana tiene acceso a agua potable.",
+    "La desigualdad en el consumo de agua a nivel mundial es evidente: mientras en países desarrollados el consumo promedio supera los 300 litros por persona al día, en muchos países en desarrollo de Sudamérica o África este consumo se reduce a menos de 50 litros diarios.",
+    "En Bolivia, el uso del agua está dominado principalmente por los sectores agrícola y minero, que concentran aproximadamente el 86 % del consumo total.",
+    "Las conclusiones de la Conferencia Mundial de los Pueblos sobre el Cambio Climático y los Derechos de la Madre Tierra, realizada en Cochabamba, resaltan la urgencia de modificar los hábitos de la población respecto al uso del agua, promoviendo políticas públicas y programas de educación que fomenten un uso eficiente y responsable del recurso.",
+    "En este contexto, y como parte de la responsabilidad corporativa, es fundamental que el personal adopte prácticas adecuadas para el manejo responsable del agua, evitando desperdicios y contribuyendo activamente a su conservación."
+  ],
+
+  "recommendations": {
+    "title": "Recomendaciones prácticas para el ahorro del agua en oficinas y áreas de trabajo",
+    "items": [
+      "Reparar o reportar de inmediato grifos, inodoros, duchas o tuberías que presenten fugas, goteos o fallas en su funcionamiento.",
+      "No arrojar papeles, residuos sólidos, colillas ni otros objetos al inodoro, ya que provocan obstrucciones y aumentan el consumo de agua.",
+      "Reducir el tiempo de uso del agua durante el lavado de manos, el cepillado de dientes o el afeitado, manteniendo el grifo cerrado mientras no se utilice.",
+      "Al lavar alimentos, utensilios o equipos, utilizar recipientes para retener el agua y evitar dejar el grifo abierto de forma continua.",
+      "Utilizar baldes en lugar de mangueras para la limpieza de pisos, superficies, equipos o vehículos, siempre que sea posible.",
+      "En instalaciones donde exista infraestructura disponible, utilizar aguas grises para la descarga de inodoros u otras actividades que no requieran agua potable.",
+            "Evita duchas prolongadas y realiza baños cortos. Reducir el tiempo bajo el agua y usarla solo cuando sea necesario ayuda a disminuir su desperdicio."
+    ]
+  },
+
+  "closing": [
+    "El uso responsable del agua es una acción cotidiana que contribuye directamente a la protección del medio ambiente y al bienestar de la población.",
+    "La adopción de prácticas sencillas y concretas permite reducir el consumo innecesario y asegurar la disponibilidad de este recurso para las futuras generaciones.",
+    "Cuidar el agua es una responsabilidad compartida y una forma concreta de contribuir al desarrollo sostenible y al respeto por la Madre Tierra."
+  ]
+}

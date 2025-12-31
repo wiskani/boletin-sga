@@ -1,5 +1,5 @@
 "use client"
- 
+
 import Image from "next/image"
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
@@ -18,7 +18,7 @@ export default function Page() {
             bg-cover
             bg-center
             bg-[url('/images/background_back_cover.jpg')]
-            " 
+            "
         >
             <div
                 className="

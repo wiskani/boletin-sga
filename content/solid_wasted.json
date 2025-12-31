@@ -1,0 +1,92 @@
+{
+  "intro": [
+    "Como parte de las acciones de sensibilización del Sistema de Gestión Ambiental, compartimos este artículo sobre la gestión de residuos sólidos en la Empresa. El objetivo es reforzar buenas prácticas que permitan evitar que los residuos generados en nuestras actividades causen impactos negativos al medio ambiente, promoviendo una gestión responsable y ordenada en todos los niveles.",
+    "La gestión adecuada de los residuos sólidos es responsabilidad del personal a cargo del área, departamento, proyecto o actividad que los genera, quienes deben asegurar su correcta separación, almacenamiento y disposición conforme a los procedimientos establecidos.",
+    "Asimismo, la gestión de residuos sólidos se rige por los lineamientos de la Ley N.º 755, principal normativa vigente en el país, la cual establece un orden de prioridad orientado a minimizar los impactos ambientales."
+  ],
+
+  "principles": {
+    "title": "Principios de la gestión de residuos sólidos",
+    "text": [
+      "La primera prioridad es evitar o reducir la generación de residuos sólidos, por ejemplo, reemplazando envases desechables por opciones reutilizables.",
+      "Cuando no es posible evitar o reducir la generación de residuos, se debe evaluar la posibilidad de reusarlos o reciclarlos.",
+      "El reúso consiste en utilizar los materiales o productos la mayor cantidad de veces posible, como cuando se aprovechan ambas caras del papel antes de desecharlo.",
+      "El reciclaje implica entregar los residuos a empresas o instituciones autorizadas para que puedan ser transformados en nuevos productos.",
+      "Si ninguna de las acciones anteriores es posible, corresponde realizar la disposición final de los residuos, ya sea mediante su depósito definitivo o su tratamiento según sus características.",
+      "La aplicación de estos principios depende del tipo de residuo sólido generado, por lo que una correcta separación resulta fundamental."
+    ]
+  },
+
+  "municipalWaste": {
+    "title": "Residuos sólidos municipales",
+    "intro": [
+      "Los residuos sólidos municipales son residuos no peligrosos generados por actividades comunes del personal, como restos de comida, papel, cartón, plásticos y otros residuos similares.",
+      "Por sus características, estos residuos generalmente pueden ser entregados a los servicios de recojo de basura municipal. Sin embargo, una adecuada separación permite aprovechar aquellos que pueden reciclarse."
+    ],
+    "containers": [
+      {
+        "name": "Papel y cartón",
+        "description": "Incluye papel de oficina, cartones y periódicos. No deben depositarse papeles impregnados con residuos orgánicos ni con sustancias peligrosas como aceites, combustibles o pintura."
+      },
+      {
+        "name": "Plásticos",
+        "description": "Incluye botellas PET, bolsas y envases plásticos vacíos. No deben mezclarse plásticos que hayan estado en contacto con sustancias químicas."
+      },
+      {
+        "name": "Residuos orgánicos",
+        "description": "Incluye restos de alimentos crudos como cáscaras de frutas y verduras, así como cortes de vegetación de menor tamaño."
+      },
+      {
+        "name": "Residuos no aprovechables",
+        "description": "Incluye residuos municipales que no pueden reciclarse, como papel higiénico, papel sucio, papeles metalizados u otros residuos similares."
+      }
+    ],
+    "vehicles": [
+      "Durante los viajes en vehículos no se debe dejar basura en el interior ni arrojar residuos al exterior.",
+      "Para este fin, los vehículos cuentan con bolsas de basura, las cuales deben ser vaciadas en contenedores fijos autorizados al finalizar el viaje."
+    ]
+  },
+
+  "hazardousWaste": {
+    "title": "Residuos sólidos peligrosos",
+    "intro": [
+      "Los residuos sólidos peligrosos son aquellos que representan un riesgo para la salud humana o el medio ambiente debido a sus características corrosivas, inflamables, infecciosas o tóxicas.",
+      "Estos residuos deben gestionarse de manera diferenciada y su disposición final debe realizarse mediante empresas especializadas.",
+     "Residuos sólidos que deben considerarse son:"
+    ],
+
+    "examples": [
+      "Pilas y baterías usadas, que deben depositarse en contenedores específicos.",
+      "Tubos y focos fluorescentes, que deben almacenarse de forma que se evite su rotura.",
+      "Residuos sólidos contaminados como trapos, papeles o envases impregnados con aceites, combustibles o pinturas.",
+      "Equipos y materiales en desuso que hayan contenido o contengan sustancias peligrosas.",
+      "Medicamentos usados o vencidos.",
+      "Cartuchos de impresoras usados, que deben almacenarse en su empaque original."
+    ],
+    "storage": [
+      "El almacenamiento de residuos peligrosos debe realizarse bajo condiciones de seguridad.",
+      "Estos residuos deben contar con sus fichas técnicas y matrices de incompatibilidad química.",
+      "El almacenamiento prolongado incrementa el riesgo para el personal, por lo que se recomienda realizar su disposición final en el menor tiempo posible."
+    ]
+  },
+
+  "specialWaste": {
+    "title": "Residuos sólidos especiales o voluminosos",
+    "text": [
+      "Los residuos sólidos especiales o voluminosos son aquellos que, por su tamaño, volumen o peso, requieren una gestión diferenciada.",
+      "Entre estos residuos se incluyen llantas usadas, maderas, chatarra y escombros."
+    ],
+    "management": [
+      "Estos residuos pueden almacenarse en áreas delimitadas y señalizadas.",
+      "No necesariamente deben mantenerse en espacios cerrados.",
+      "Su disposición final debe realizarse en el menor tiempo posible, utilizando servicios municipales o empresas especializadas cuando corresponda."
+    ]
+  },
+
+  "closing": [
+    "La correcta gestión de los residuos sólidos es una tarea compartida y fundamental para el funcionamiento del Sistema de Gestión Ambiental.",
+    "Ante cualquier duda, se puede consultar el procedimiento correspondiente en el Portal del Conocimiento o contactar a la Unidad de Medio Ambiente.",
+    "El compromiso de cada persona es clave para mantener y fortalecer nuestras buenas prácticas ambientales."
+  ]
+}
+

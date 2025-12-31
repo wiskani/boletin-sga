@@ -85,12 +85,11 @@ body {
 .firstparagraph {
     @apply
     text-sm
-    mb-3
+    mb-2
     font-geistsans
     text-gray-500
     dark:text-gray-400
     first-letter:text-7xl
-    first-letter:font-bold
     first-letter:text-gray-900
     dark:first-letter:text-gray-100
     first-letter:me-3
@@ -107,7 +106,7 @@ body {
 .paragraph {
     @apply
     text-sm
-    mb-3
+    mb-2
     font-geistsans
     text-gray-500
     dark:text-gray-400
@@ -122,7 +121,7 @@ body {
 .paragraph-extra {
     @apply
     text-xs
-    mb-3
+    mb-2
     font-geistsans
     text-gray-200
     dark:text-gray-600
@@ -179,3 +178,48 @@ body {
     text-indent: -1.5rem; /* Sangría negativa para alinear líneas adicionales */
     padding-left: 3rem; /* Desplazamiento del contenido después de la viñeta */
 }
+.newsletter-window {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.newsletter-sheet {
+  width: 140%;
+  height: auto;
+  transform: translateY(100%);
+  animation: newsletter-rise 900ms ease-out 1.2s forwards;
+}
+
+@keyframes newsletter-rise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
+@keyframes truck-drive-loop {
+  0%   { transform: translateX(-140%); }
+  25%  { transform: translateX(0%); }     /* llega al centro */
+  55%  { transform: translateX(0%); }     /* se queda */
+  85%  { transform: translateX(140%); }   /* sale por la derecha */
+  100% { transform: translateX(140%); }   /* mantiene fuera para que el loop no “salte” */
+}
+
+.truck-drive {
+  animation: truck-drive-loop 4.5s linear infinite;
+  will-change: transform;
+}
+
+/* accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .truck-drive { animation: none; }
+}
+

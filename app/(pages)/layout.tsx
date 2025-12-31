@@ -18,16 +18,16 @@ export default function WizardLayout({ children }: React.PropsWithChildren) {
         <>
             <Navbar
                 pageNumber={currentIndex}
-                totalPageNumber={articles.length -1}
+                totalPageNumber={articles.length - 1}
                 title={articles[currentIndex].fulltitle}
             />
-                <div className="flex flex-column h-full items-center">
-                    <div className="px-4 w-full md:max-w-screen-md md:mx-auto">
-                        {children}
-                    </div>
+            <div className="flex flex-column h-full items-center">
+                <div className="w-full">
+                    {children}
                 </div>
-            <PageNavigation prevPageLink={prevPageLink} nextPageLink={nextPageLink}/>
-            <ScrollIndicator/>
+            </div>
+            <PageNavigation prevPageLink={prevPageLink} nextPageLink={nextPageLink} />
+            <ScrollIndicator />
         </>
     )
 }
