@@ -1,145 +1,146 @@
 {
-    "intro": [
-        "Como parte de las acciones de sensibilización del Sistema de Gestión Ambiental, este artículo aborda los aspectos fundamentales relacionados con el manejo y almacenamiento de sustancias peligrosas en las actividades de la Empresa.",
-        "El objetivo es reforzar prácticas seguras que permitan prevenir riesgos para la salud del personal, evitar impactos ambientales y asegurar el cumplimiento de la normativa vigente."
+  "intro": [
+    "Como parte de las acciones de sensibilización del Sistema de Gestión Ambiental, este artículo aborda los aspectos fundamentales relacionados con el manejo y almacenamiento de sustancias peligrosas en las actividades de la Empresa.",
+    "El objetivo es reforzar prácticas seguras que permitan prevenir riesgos para la salud del personal, evitar impactos ambientales y asegurar el cumplimiento de la normativa vigente."
+  ],
+
+  "definition": {
+    "title": "¿Qué son las sustancias peligrosas?",
+    "text": [
+      "Las sustancias peligrosas son materiales o residuos que, por sus características, pueden causar daños al medio ambiente y a la salud del personal.",
+      "Estas sustancias pueden presentar propiedades como corrosividad, explosividad, inflamabilidad, toxicidad, radioactividad o bioinfecciosidad.",
+      "Revisa la definicion de cada tipo de peligrosidad:"
     ],
-
-    "definition": {
-        "title": "¿Qué son las sustancias peligrosas?",
-        "text": [
-            "Las sustancias peligrosas son materiales o residuos que, por sus características, pueden causar daños al medio ambiente y a la salud del personal.",
-            "Estas sustancias pueden presentar propiedades como corrosividad, explosividad, inflamabilidad, toxicidad, radioactividad o bioinfecciosidad.", 
-            "Revisa la definicion de cada tipo de peligrosidad, haz clic en cada icono."
-        ],
-        "items": [
-            {
-                "name": "Corrosividad",
-                "description": "Capacidad de una sustancia para deteriorar o destruir materiales y tejidos vivos, pudiendo causar quemaduras en la piel, daños en los ojos o corrosión de superficies metálicas."
-            },
-            {
-                "name": "Explosividad",
-                "description": "Propiedad de algunas sustancias de reaccionar violentamente liberando energía de forma súbita, lo que puede provocar explosiones, daños estructurales y lesiones graves."
-            },
-            {
-                "name": "Inflamabilidad",
-                "description": "Capacidad de una sustancia para encenderse fácilmente en presencia de una fuente de calor, chispa o llama, generando incendios y riesgos asociados."
-            },
-            {
-                "name": "Toxicidad",
-                "description": "Potencial de una sustancia para causar efectos nocivos en la salud humana por inhalación, ingestión o contacto con la piel, ya sea de forma inmediata o a largo plazo."
-            },
-            {
-                "name": "Radioactividad",
-                "description":  "Fenómeno físico mediante el cual ciertos materiales inestables emiten radiación ionizante como resultado de procesos de desintegración nuclear, pudiendo generar efectos sobre la salud humana y el medio ambiente."           },
-            {
-                "name": "Bioinfecciosidad",
-                "description": "Capacidad de ciertos materiales de contener microorganismos patógenos que pueden provocar infecciones o enfermedades al entrar en contacto con las personas."
-            }
-        ]
-    },
-
-    "impacts": {
-        "title": "Riesgos asociados al mal manejo",
-        "text": [
-            "El manejo inadecuado de sustancias peligrosas puede generar efectos perjudiciales para la salud de las personas.",
-            "También puede ocasionar impactos negativos en la flora, fauna y los ecosistemas.",
-            "Asimismo, puede derivar en el incumplimiento de la normativa nacional, generar costos asociados a accidentes, enfermedades laborales, sanciones y afectar la imagen institucional."
-        ]
-    },
-
-    "documentation": {
-        "title": "Documentación y procedimientos aplicables",
-        "text": [
-            "La Empresa cuenta con documentación del Sistema de Gestión que regula el manejo de sustancias peligrosas.",
-            "Todo el personal involucrado debe conocer y aplicar los lineamientos establecidos en esta documentación.",
-            "Te invitamos a revisar los documentos en el portal del conocimiento, haz clic en los siguientes links"       ]
-    },
-
-    "labeling": {
-        "title": "Etiquetado, señalización y fichas técnicas",
-        "text": [
-            "Las sustancias peligrosas deben contar con una adecuada señalización que incluya prohibiciones, advertencias y obligaciones.",
-            "Asimismo, cada sustancia debe disponer de su ficha técnica correspondiente.",
-            "El personal que maneja sustancias peligrosas debe conocer el contenido de estas fichas, las cuales deben estar ubicadas en lugares visibles y de fácil acceso."
-        ]
-    },
-
-    "spillPrevention": {
-        "title": "Medidas para prevenir derrames",
-        "text": [
-            "Las áreas donde se almacenan o manipulan sustancias peligrosas deben contar con condiciones adecuadas, como techos y paredes que eviten la radiación solar directa y el ingreso de agua.",
-            "Estos espacios deben disponer de señalización adecuada, medios de extinción de incendios y permanecer cerrados, utilizando la iluminación solo cuando sea necesario.",
-            "Está prohibido fumar, comer o beber en estos recintos.",
-            "Las sustancias susceptibles de generar derrames sobre suelo deben contar con sistemas de contención, como bermas, bandejas, cámaras, plataformas o geomembranas.",
-            "Asimismo, se debe disponer de kits antiderrames con materiales absorbentes, ubicados al alcance del personal."
-        ]
-    },
-
-    "spillResponse": {
-        "title": "Actuación en caso de derrames",
-        "steps": [
-            "Si es seguro y factible, intentar detener o sellar el derrame.",
-            "Verificar que los dispositivos de contención estén funcionando correctamente.",
-            "Si la sustancia se ha esparcido fuera de su contención, aplicar los kits antiderrames rodeando el área afectada para evitar su propagación.",
-            "Evitar el contacto de la sustancia con la piel y los ojos, utilizando previamente los equipos de protección individual.",
-            "En caso de incendio, controlar primero el fuego antes de aplicar los kits antiderrames."
-        ]
-    },
-
-    "operation": {
-        "title": "Sustancias peligrosas en operación",
-        "text": [
-            "En las subestaciones existen equipos que funcionan con sustancias peligrosas, como transformadores y reactores de potencia que contienen aceite dieléctrico.",
-            "También se cuenta con equipos de menor tamaño, como transformadores de corriente y potencial, así como bancos de baterías, grupos electrógenos y equipos que utilizan gas SF₆."
-        ]
-    },
-
-    "specificAreas": {
-        "title": "Lineamientos por tipo de instalación",
-        "sections": [
-            {
-                "name": "Almacenamiento de aceite dieléctrico",
-                "text": [
-                    "Los almacenes deben estar separados de otros ambientes y construidos con materiales incombustibles.",
-                    "Deben contar con pasillos adecuados, canaletas colectoras y tanques de recolección con capacidad suficiente.",
-                    "El acceso debe estar restringido a personal autorizado y contar con señalización y medios de extinción de incendios.",
-                    "Está prohibido fumar, comer o beber en estos depósitos.",
-                    "Los aceites usados deben identificarse y almacenarse separados de los aceites nuevos."
-                ]
-            },
-            {
-                "name": "Grupos electrógenos",
-                "text": [
-                    "El acceso a las salas debe mantenerse restringido.",
-                    "No se deben almacenar otras sustancias peligrosas en su interior.",
-                    "Se debe contar con kits antiderrames accesibles y mantener limpias las canaletas de recolección.",
-                    "Los sólidos contaminados generados durante el mantenimiento deben depositarse en contenedores diferenciados."
-                ]
-            },
-            {
-                "name": "Salas de baterías",
-                "text": [
-                    "La manipulación de baterías debe realizarse únicamente por personal autorizado y capacitado.",
-                    "Se deben utilizar equipos de protección individual adecuados.",
-                    "No se deben almacenar sustancias incompatibles dentro de la sala.",
-                    "Antes de ingresar, se debe ventilar el ambiente y verificar el correcto funcionamiento del lavaojos.",
-                    "La ficha técnica del electrolito debe estar disponible dentro de la sala."
-                ]
-            },
-            {
-                "name": "Manejo de tanques de SF₆",
-                "text": [
-                    "Los tanques deben contar con fichas técnicas y señalización adecuada.",
-                    "Deben estar correctamente sostenidos y fijos para evitar caídas o golpes.",
-                    "Los sitios de almacenamiento deben estar ventilados y señalizados."
-                ]
-            }
-        ]
-    },
-
-    "closing": [
-        "El manejo seguro de sustancias peligrosas es una responsabilidad compartida y fundamental para proteger la salud del personal y el medio ambiente.",
-        "La aplicación de estos lineamientos permite prevenir accidentes, reducir impactos ambientales y fortalecer el desempeño del Sistema de Gestión Ambiental."
+    "items": [
+      {
+        "name": "Corrosividad",
+        "description": "Capacidad de una sustancia para deteriorar o destruir materiales y tejidos vivos, pudiendo causar quemaduras en la piel, daños en los ojos o corrosión de superficies metálicas."
+      },
+      {
+        "name": "Explosividad",
+        "description": "Propiedad de algunas sustancias de reaccionar violentamente liberando energía de forma súbita, lo que puede provocar explosiones, daños estructurales y lesiones graves."
+      },
+      {
+        "name": "Inflamabilidad",
+        "description": "Capacidad de una sustancia para encenderse fácilmente en presencia de una fuente de calor, chispa o llama, generando incendios y riesgos asociados."
+      },
+      {
+        "name": "Toxicidad",
+        "description": "Potencial de una sustancia para causar efectos nocivos en la salud humana por inhalación, ingestión o contacto con la piel, ya sea de forma inmediata o a largo plazo."
+      },
+      {
+        "name": "Radioactividad",
+        "description": "Fenómeno físico mediante el cual ciertos materiales inestables emiten radiación ionizante como resultado de procesos de desintegración nuclear, pudiendo generar efectos sobre la salud humana y el medio ambiente."
+      },
+      {
+        "name": "Bioinfecciosidad",
+        "description": "Capacidad de ciertos materiales de contener microorganismos patógenos que pueden provocar infecciones o enfermedades al entrar en contacto con las personas."
+      }
     ]
-}
+  },
 
+  "impacts": {
+    "title": "Riesgos asociados al mal manejo",
+    "text": [
+      "El manejo inadecuado de sustancias peligrosas puede generar efectos perjudiciales para la salud de las personas.",
+      "También puede ocasionar impactos negativos en la flora, fauna y los ecosistemas.",
+      "Asimismo, puede derivar en el incumplimiento de la normativa nacional, generar costos asociados a accidentes, enfermedades laborales, sanciones y afectar la imagen institucional."
+    ]
+  },
+
+  "documentation": {
+    "title": "Documentación y procedimientos aplicables",
+    "text": [
+      "La Empresa cuenta con documentación del Sistema de Gestión que regula el manejo de sustancias peligrosas.",
+      "Todo el personal involucrado debe conocer y aplicar los lineamientos establecidos en esta documentación.",
+      "Te invitamos a revisar los documentos en el portal del conocimiento, haz clic en los siguientes links"
+    ]
+  },
+
+  "labeling": {
+    "title": "Etiquetado, señalización y fichas técnicas",
+    "text": [
+      "Las sustancias peligrosas deben contar con una adecuada señalización que incluya prohibiciones, advertencias y obligaciones.",
+      "Asimismo, cada sustancia debe disponer de su ficha técnica correspondiente.",
+      "El personal que maneja sustancias peligrosas debe conocer el contenido de estas fichas, las cuales deben estar ubicadas en lugares visibles y de fácil acceso."
+    ]
+  },
+
+  "spillPrevention": {
+    "title": "Medidas para prevenir derrames",
+    "text": [
+      "Las áreas donde se almacenan o manipulan sustancias peligrosas deben contar con condiciones adecuadas, como techos y paredes que eviten la radiación solar directa y el ingreso de agua.",
+      "Estos espacios deben disponer de señalización adecuada, medios de extinción de incendios y permanecer cerrados, utilizando la iluminación solo cuando sea necesario.",
+      "Está prohibido fumar, comer o beber en estos recintos.",
+      "Las sustancias susceptibles de generar derrames sobre suelo deben contar con sistemas de contención, como bermas, bandejas, cámaras, plataformas o geomembranas.",
+      "Asimismo, se debe disponer de kits antiderrames con materiales absorbentes, ubicados al alcance del personal."
+    ]
+  },
+
+  "spillResponse": {
+    "title": "Actuación en caso de derrames",
+    "steps": [
+      "Si es seguro y factible, intentar detener o sellar el derrame.",
+      "Verificar que los dispositivos de contención estén funcionando correctamente.",
+      "Si la sustancia se ha esparcido fuera de su contención, aplicar los kits antiderrames rodeando el área afectada para evitar su propagación.",
+      "Evitar el contacto de la sustancia con la piel y los ojos, utilizando previamente los equipos de protección individual.",
+      "En caso de incendio, controlar primero el fuego antes de aplicar los kits antiderrames."
+    ]
+  },
+
+  "operation": {
+    "title": "Sustancias peligrosas en operación",
+    "text": [
+      "En las subestaciones existen equipos que funcionan con sustancias peligrosas, como transformadores y reactores de potencia que contienen aceite dieléctrico.",
+      "También se cuenta con equipos de menor tamaño, como transformadores de corriente y potencial, así como bancos de baterías, grupos electrógenos y equipos que utilizan gas SF₆."
+    ]
+  },
+
+  "specificAreas": {
+    "title": "Lineamientos por tipo de instalación",
+    "sections": [
+      {
+        "name": "Almacenamiento de aceite dieléctrico",
+        "text": [
+          "Los almacenes deben estar separados de otros ambientes y construidos con materiales incombustibles.",
+          "Deben contar con pasillos adecuados, canaletas colectoras y tanques de recolección con capacidad suficiente.",
+          "El acceso debe estar restringido a personal autorizado y contar con señalización y medios de extinción de incendios.",
+          "Está prohibido fumar, comer o beber en estos depósitos.",
+          "Los aceites usados deben identificarse y almacenarse separados de los aceites nuevos."
+        ]
+      },
+      {
+        "name": "Grupos electrógenos",
+        "text": [
+          "El acceso a las salas debe mantenerse restringido.",
+          "No se deben almacenar otras sustancias peligrosas en su interior.",
+          "Se debe contar con kits antiderrames accesibles y mantener limpias las canaletas de recolección.",
+          "Los sólidos contaminados generados durante el mantenimiento deben depositarse en contenedores diferenciados."
+        ]
+      },
+      {
+        "name": "Salas de baterías",
+        "text": [
+          "La manipulación de baterías debe realizarse únicamente por personal autorizado y capacitado.",
+          "Se deben utilizar equipos de protección individual adecuados.",
+          "No se deben almacenar sustancias incompatibles dentro de la sala.",
+          "Antes de ingresar, se debe ventilar el ambiente y verificar el correcto funcionamiento del lavaojos.",
+          "La ficha técnica del electrolito debe estar disponible dentro de la sala."
+        ]
+      },
+      {
+        "name": "Manejo de tanques de SF₆",
+        "text": [
+          "Los tanques deben contar con fichas técnicas y señalización adecuada.",
+          "Deben estar correctamente sostenidos y fijos para evitar caídas o golpes.",
+          "Los sitios de almacenamiento deben estar ventilados y señalizados."
+        ]
+      }
+    ]
+  },
+
+  "closing": [
+    "El manejo seguro de sustancias peligrosas es una responsabilidad compartida y fundamental para proteger la salud del personal y el medio ambiente.",
+    "La aplicación de estos lineamientos permite prevenir accidentes, reducir impactos ambientales y fortalecer el desempeño del Sistema de Gestión Ambiental."
+  ]
+}
